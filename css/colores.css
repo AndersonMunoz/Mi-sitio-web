@@ -1,15 +1,33 @@
-.box-1 {
+.box {
+    display:inline-block;
     width: 300px;
     heighT: 300px;
+    color: black
+}
+.box-1 {
     background-color: rgb(255,0,0);
 }
 .box-2 {
-    width: 300px;
-    height: 300px;
     background: rgb(0,255,0);
 }
 .box-3 {
-    width: 300px;
-    height: 300px;
     background: rgb(0,0,255);
+}
+.box-4 {
+    background: darkcyan;
+}
+.box-5 {
+    background: goldenrod;
+}
+.box-6 {
+    background: gainsboro;
+}
+.box-7 {
+    background: rgb(139,255,157);
+}
+.box-8 {
+    background: rgb(24,188,219);
+}
+.box-9 {
+    background: rgb(219,117,85);
 }
