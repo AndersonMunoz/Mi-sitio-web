@@ -1,11 +1,8 @@
 .box {
     display:inline-block;
     text-align: center;
-<<<<<<< HEAD
     justify-content: center;
     align-items: center;
-=======
->>>>>>> 83d5f9f68f977da9b824835e27d31582c4ff130f
     width: 300px;
     heighT: 300px;
     color: black
