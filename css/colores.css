@@ -1,6 +1,8 @@
 .box {
     display:inline-block;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     heighT: 300px;
     color: black
