@@ -1,7 +1,7 @@
 .box {
     display: inline-flex;
-    width: 250px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     letter-spacing: .1em;
     word-spacing: -0.1em;
     line-height: 1 em;
@@ -12,31 +12,31 @@
 }
 
 .box-1 {
-    border: 6px solid rgb(36,102,100);
-    background-color: rgb(27,69,67);
+    border: 6px solid rgb(61, 219, 122);
+    background-color: rgb(15, 88, 25);
     text-align: center;
 }
 
 .box-2 {
-    border: 6px dotted rgb(10,41,28);
-    background-color: rgb(21,80,52);
+    border: 6px dotted rgb(40, 160, 190);
+    background-color: rgb(14, 8, 65);
     text-align: right;
 }
 
 .box-3 {
-    border: 6px dashed rgb(27,26,53);
-    background-color: rgb(46,44,93);
+    border: 6px dashed rgb(204, 40, 182);
+    background-color: rgb(57, 9, 71);
     text-align: left;
 }
 
 .box-4 {
-    border: 6px double  rgb(135,142,182);
-    background-color: rgb(32,35,52);
+    border: 6px double  rgb(255, 251, 0);
+    background-color: rgb(97, 88, 10);
     text-align: justify;
 }
 
 .box-5 {
-    border: 6px groove rgb(70,31,97);
-    background-color: rgb(125,55,171);
+    border: 6px groove rgb(212, 119, 119);
+    background-color: rgb(100, 7, 7);
     text-align: justify;
 }
