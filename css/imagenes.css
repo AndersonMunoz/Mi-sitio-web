@@ -1,0 +1,19 @@
+.box{
+    display:inline-block;
+    background: blue;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    heighT: 600px;
+}
+
+.img-100 {
+    width: 23%;
+}
+
+h1,h2, .box-img {
+    text-align: center;
+}
+
+
