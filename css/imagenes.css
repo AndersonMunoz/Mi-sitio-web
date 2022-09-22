@@ -1,13 +1,16 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
 .box{
     display: inline-block;
     text-align: center;
-    justify-content: center;
-    width: 400px;
-    heighT: 400px;
-    padding: 1em;
-    margin-top: 1em;
-    border: 10% dashed blue;
+    width: 20%;
+    margin: 30px 1.5%;
+    vertical-align: top;
 }
+
 
 .img-100 {
     width: 90%;
@@ -38,4 +41,7 @@ h2, .box-img {
 .tran{
     text-align: justify;
 }
+
+
+
 
