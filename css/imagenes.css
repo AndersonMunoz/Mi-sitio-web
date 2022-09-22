@@ -14,7 +14,7 @@
 
 .img-100 {
     width: 90%;
-
+    margin: 5% 5%
 }
 
 h1 {
@@ -25,10 +25,18 @@ h1 {
     text-align: center;
 }
 
-h2, .box-img {
+.box-img {
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
+h2 {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(45, 96, 192);
+    color: white;
+}
+
 
 .esp {
     text-align: right;
