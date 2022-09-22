@@ -6,13 +6,12 @@
 .box{
     display: inline-block;
     text-align: center;
-    width: 20%;
-    margin: 30px 1.5%;
+    width: 300px;
+    margin: 30px;
     vertical-align: top;
     border: 1px solid rgb(14, 7, 105);
     border-radius: 5%;
 }
-
 
 .img-100 {
     width: 90%;
@@ -49,6 +48,7 @@ h2 {
     text-align: left;
     padding: 15px;
 }
+
 
 .tran{
     text-align: justify;
