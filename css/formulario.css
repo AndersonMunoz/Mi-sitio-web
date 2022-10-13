@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 3px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+label{
+    display: block;
+}
+
+a {
+    text-decoration:rgb(9, 4, 41);
+    color: rgb(9, 4, 41);
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(9, 4, 41);
+    color: white;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+    font-size: 1.3em;
+    padding: 2px;
+}
+
+input[type="text"] {
+    padding: 6px;
+    font-size: 1.1em;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid black    ;
+}
+input[type="text"]:focus {
+    outline: none;
+}
+
