@@ -55,6 +55,7 @@ a {
 
 .img {
     width: 200px;
+    border-radius: 3%;
 }
 
 .img2 {
