@@ -37,3 +37,12 @@ input[type="text"]:focus {
     outline: none;
 }
 
+form {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: 1px;
+    width: 400px ;
+}
+
+
