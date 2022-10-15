@@ -2,7 +2,8 @@
     margin:0;
     padding: 0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}  
+} 
+
 ul{
     list-style: none;
     font-size: 1.3em;
@@ -22,7 +23,7 @@ h3 {
 form {
     width: 400px;
     justify-content: center;
-    margin-left: 35%;
+    margin-left: 30%;
     padding: 2px;
 }
 
@@ -73,7 +74,7 @@ form {
  input:hover {
     background-color: rgb(232,240,254);
  } 
- 
+
 button{
     margin: 8px 21px;
     width: 400px;
