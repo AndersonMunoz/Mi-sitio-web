@@ -8,10 +8,11 @@ ul{
     list-style: none;
     font-size: 1.3em;
     padding: 2px;
+    margin: 10px;
 } 
 a {
     text-decoration:rgb(9, 4, 41);
-    color: rgb(9, 4, 41);
+    color: rgb(0,159,217);
 }
 
 h3 {
@@ -90,7 +91,7 @@ button:hover {
     opacity: 0.8;
   }
 
-  ul:hover{
+ ul:hover{
     opacity: 0.8;
   }
 
