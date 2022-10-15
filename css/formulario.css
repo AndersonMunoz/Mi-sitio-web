@@ -1,8 +1,8 @@
 *{
     margin:0;
-    padding: 3px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}  
 
 label{
     display: block;
@@ -13,18 +13,25 @@ a {
     color: rgb(9, 4, 41);
 }
 
-h1{
+h1 {
     text-align: center;
     background-color: rgb(9, 4, 41);
     color: white;
-    padding: 10px;
-}
+} 
+
+form {
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    margin-left: 35%;
+    margin-top: 10px;
+} 
 
 ul{
     list-style: none;
     font-size: 1.3em;
     padding: 2px;
-}
+} 
 
 input[type="text"] {
     padding: 6px;
@@ -35,14 +42,6 @@ input[type="text"] {
 }
 input[type="text"]:focus {
     outline: none;
-}
-
-form {
-    align-items: center;
-    display: flex;
-    text-align: center;
-    margin: 1px;
-    width: 400px ;
 }
 
 
