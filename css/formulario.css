@@ -22,9 +22,10 @@ h1 {
 form {
     align-items: center;
     text-align: center;
-    width: 400px;
+    width: 500px;
     margin-left: 35%;
-    margin-top: 10px;
+    margin-top: 10px; 
+    background-color: rgb(243, 243, 243);
 } 
 
 ul{
@@ -44,4 +45,37 @@ input[type="text"]:focus {
     outline: none;
 }
 
+input:focus{
+    background-color: rgb(232,240,254);
+    box-shadow: 2px 2px 4px rgb(129, 129, 129), -2px -2px 4px rgb(129, 129, 129);
+   }
+
+input:hover{
+    background-color: rgb(232,240,254);
+    box-shadow: 2px 2px 4px rgb(129, 129, 129), -2px -2px 4px rgb(129, 129, 129);
+   }
+
+textarea:focus{
+    background-color: rgb(232,240,254);
+    box-shadow: 2px 2px 4px rgb(129, 129, 129), -2px -2px 4px rgb(129, 129, 129);
+}
+
+textarea:hover{
+    background-color: rgb(232,240,254);
+    box-shadow: 2px 2px 4px rgb(129, 129, 129), -2px -2px 4px rgb(129, 129, 129);
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(224, 228, 241);
+    border-radius: 15%;
+    border: none;
+}
+ 
+button:hover {
+    background-color: rgb(207, 215, 241);
+    border: none;
+}
 
