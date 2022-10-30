@@ -17,6 +17,7 @@
     font-size: 0.8em;
     padding: 8px;
     border-right: 1px solid rgb(255,129,56);
+    margin-left: -5px;
 }
 
 .inicio {
@@ -30,8 +31,15 @@
     font-weight: 1000;
 } 
 
-li:hover {
+.menu:hover {
     cursor: pointer;
+    background-color: rgb(220,220,220);
+    padding: 8px;
+}
+
+.inicio:hover {
+    cursor: pointer;
+    background-color: rgb(61, 61, 61);
 }
 ul{
     list-style: none; 
@@ -57,3 +65,7 @@ nav{
     border-radius: 5px;
 }
 
+.box:hover{
+    cursor: pointer;
+    background-color: rgb(61, 61, 61);
+}
