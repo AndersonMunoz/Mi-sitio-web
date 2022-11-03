@@ -45,6 +45,7 @@ a {
     background-color: rgb(24, 68, 68);
     cursor: pointer;
     color: white;
+    border-radius: 10px;
 }
 
 .box {
@@ -54,3 +55,16 @@ a {
     position: relative;
     top: 100%;
 }
+
+.sub {
+    display: none;
+}
+
+.sub:hover{
+    display: block;
+    position: relative;
+    left:100%;
+    top: 0;
+    background-color: bisque;
+}
+

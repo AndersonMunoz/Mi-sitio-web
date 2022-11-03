@@ -10,12 +10,20 @@
 <body>
     <button id="btnmenu" class="boton-menu">Saludo</button>
     <div>
-        <ul class="mainmenu">
-            <li class="menu" ><a href="index.html">Inicio</a></li>
-            <li id="we" class="menu">Nosotros</li>
-            <li class="menu">Contáctenos</li>
-            <li class="menu">Ayuda</li>
-        </ul>
+        <nav>
+            <ul class="mainmenu">
+                <li class="menu" ><a href="index.html">Inicio</a></li>
+                <li id="we" class="menu">Nosotros</li>
+                <li class="menu">Contáctenos
+                    <nav class="sub">
+                        <ul>
+                            <li>Hola</li>
+                        </ul>
+                    </nav>
+                </li>
+                <li class="menu">Ayuda</li>
+            </ul>
+        </nav>
     </div>
 </body>
 <script src="js/menusubitens.js"></script>
