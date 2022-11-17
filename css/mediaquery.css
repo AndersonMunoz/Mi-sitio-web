@@ -70,6 +70,12 @@ p{
     }
     .main-menu{
         margin-top: 81px;
+        display: none;
+    }
+
+    .main-menu-visible {
+        display: block;
+        margin-top: 81px;
     }
 
  
