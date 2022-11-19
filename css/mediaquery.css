@@ -6,7 +6,7 @@
 }
 .main-nav{
     width: 100%;
-    background-color: red;
+    background-color: rgb(9, 97, 23);
     position: fixed;
     height: 80px;
 }
@@ -36,7 +36,7 @@ a{
     cursor: pointer;
 }
 .item-main-menu:hover{
-    background-color: rgb(49, 49, 49,0.9);
+    background-color: rgba(6, 54, 14, 0.9);
 }
 
 p{
@@ -47,7 +47,7 @@ p{
 @media only screen  and (max-width:1152px) {
     .item-main-menu{
         display: block;
-        background-color: rgb(121, 121, 121,0.9);
+        background-color: rgba(9, 97, 23, 0.9);
         color: black;
         text-align: center;
         position: relative;
@@ -55,7 +55,7 @@ p{
     }
 
     .item-main-menu:hover{
-        background-color: rgb(49, 49, 49,0.9);
+        background-color: rgba(6, 54, 14, 0.9);
     }
     .bar-menu{
         visibility: visible;
