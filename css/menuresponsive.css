@@ -140,7 +140,7 @@ p{
         width: 100%;
      }
 
-     nav ul li:hover {
+     nav ul li:hover .children {
         display: none;
      }
  }
