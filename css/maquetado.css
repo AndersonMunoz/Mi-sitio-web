@@ -1,0 +1,388 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    background-color: rgb(0, 52, 126);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+i {
+    color: rgb(0, 200, 255)
+}
+
+.header {
+    display: grid;
+    grid-template: "      persona empresa       Info  readi  centro mi" 45px/
+        1fr 100px 100px 300px 350px 140px 150px 100px 1fr;
+    width: 100%;
+    background-color: rgb(0, 25, 80);
+    color: white;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.header2 {
+    display: grid;
+    grid-area: logo;
+    grid-template: "empty  logo  movil  internet  Televisión   Planes Vacio Tienda carro lupa " 75px/
+        1fr 100px 100px 100px 100px 100px 540px 100px 50px 50px 1fr;
+    width: 100%;
+    background-color: rgb(0, 52, 126);
+    color: white;
+    justify-content: center;
+}
+
+.header3 {
+    display: grid;
+    grid-area: grande;
+    grid-template: "grande" 100px /
+        300px 1fr 1fr 300px;
+    width: 100%;
+    color: rgb(170, 232, 230);
+    border-bottom: 1px solid rgb(170, 232, 230);
+    border-top: 1px solid rgb(170, 232, 230);
+}
+
+
+.header4 {
+    display: grid;
+    grid-template: "grande" 350px /
+        1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 350px;
+    ;
+}
+
+.box4 {
+    border: 1px solid black;
+}
+
+.header5 {
+    display: grid;
+    grid-template: "solo" 100px /
+        100%;
+    width: 100%;
+    height: 75px;
+    ;
+}
+
+.box5 {
+    height: 75px;
+    border: 1px solid black;
+}
+
+
+.header6 {
+    display: grid;
+    grid-template: "solo" 150px /
+        1fr 200px 210px 210px 210px 210px 210px 1fr;
+    width: 100%;
+    height: 75px;
+}
+
+.box6 {
+    height: 150px;
+    border: 1px solid black;
+}
+
+
+.header7 {
+    display: grid;
+    grid-template: "vacio imagen vacio" 300px /
+        1fr 1240px 1fr;
+    width: 100%;
+    justify-content: center;
+}
+
+.box7 {
+    height: 300px;
+    width: 1250px;
+
+    margin-top: 150px;
+}
+
+.header8 {
+    display: grid;
+    grid-template: "vacio imagen vacio" 50px /
+        1fr 1240px 1fr;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.box8 {
+    height: 50px;
+    width: 1250px;
+    border: none;
+}
+
+.header9,
+.header8 {
+    background-color: rgb(229, 234, 242);
+}
+
+.header9,
+.header10 {
+    display: grid;
+    grid-template: "ofertas" 200px /
+        1fr 312.5px 312.5px 312.5px 312.5px 1fr;
+    width: 100%;
+    justify-content: center;
+}
+
+.header10 {
+    margin-top: 100px;
+}
+
+.box9,
+.box10 {
+    height: 200px;
+    border: 1px solid black;
+}
+
+.header11 {
+    display: grid;
+    grid-template: "vacio imagen vacio" 300px /
+        1fr 1240px 1fr;
+    width: 100%;
+    justify-content: center;
+}
+
+.box11 {
+    height: 300px;
+    width: 1250px;
+
+    margin-top: 100px;
+}
+
+.header12 {
+    display: grid;
+    grid-template: "ofertas" 200px /
+        1fr 250px 250px 250px 250px 250px 1fr;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.box12 {
+    height: 200px;
+    border: 1px solid black;
+}
+
+.header13 {
+    display: grid;
+    grid-template: "vacio imagen vacio" 100px /
+        1fr 1240px 1fr;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(0, 55, 123);
+}
+
+.box13 {
+    height: 100px;
+    width: 1250px;
+    border-top: 1px solid black;
+    
+}
+
+.texto2 {
+    display: none;
+}
+
+@media only screen and (max-width: 1270px) {
+    .header {
+        display: grid;
+        grid-template: "      persona empresa       Info  readi  centro mi" 45px/
+            50px 50px 50px 1fr 50px 50px 50px 50px;
+        width: 100%;
+        background-color: rgb(0, 25, 80);
+        color: white;
+        font-size: 13px;
+        justify-content: center;
+    }
+
+    .texto1 {
+        display: none;
+    }
+
+    .texto2 {
+        display: inline;
+    }
+
+    .header2 {
+        display: none;
+    }
+
+    .header3 {
+        display: grid;
+        grid-area: grande;
+        grid-template: "grande" 100px /
+            50px 1fr 1fr 50px;
+        width: 100%;
+        color: rgb(170, 232, 230);
+        border-bottom: 1px solid rgb(170, 232, 230);
+        border-top: 1px solid rgb(170, 232, 230);
+    }
+
+    .header4 {
+        display: grid;
+        grid-template: "grande" 350px /
+            1fr 1fr 1fr 1fr;
+        width: 100%;
+        height: 350px;
+        ;
+    }
+
+    .header5 {
+        display: grid;
+        grid-template: "solo" 100px /
+            100%;
+        width: 100%;
+        height: 75px;
+        ;
+    }
+
+    .header6 {
+        display: grid;
+        grid-template: "grande" 350px /
+            50px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+        width: 100%;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .header7 {
+        display: grid;
+        grid-template: "vacio imagen vacio" 300px /
+            1fr 1fr 1fr;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .box7 {
+        width: 100%;
+    }
+
+    .header8 {
+        display: grid;
+        grid-template: "vacio imagen vacio" 50px /
+            50px 1fr 50px;
+        width: 100%;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .box8 {
+        width: 100%;
+    }
+
+    .header9,
+    .header10 {
+        display: grid;
+        grid-template: "ofertas" 200px /
+            50px 1fr 1fr 1fr 1fr 50px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header11 {
+        display: grid;
+        grid-template: "vacio imagen vacio" 300px /
+            1fr;
+        justify-content: center;
+    }
+
+    .box11 {
+        width: 100%;
+    }
+
+    .header12 {
+        display: grid;
+        grid-template: "ofertas" 200px /
+            50px 1fr 1fr 1fr 1fr 1fr 50px;
+        width: 100%;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .header13 {
+        display: grid;
+        grid-template: "vacio imagen vacio" 100px /
+            0px 1fr 0px;
+        justify-content: center;
+        background-color: rgb(0, 55, 123);
+    }
+
+    .box13 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .header6 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        height: 1fr;
+        font-size: 10px;
+        margin-bottom: 300px;
+    }
+
+    .box61 {
+        display: none;
+    }
+
+    .header10 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .box10 {
+        height: 100px;
+    }
+
+    .header12 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 100%;
+        justify-content: center;
+    }
+    .box12 {
+        height: 80px;
+    }
+}
+
+.ayuda {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(7,94,84);
+    position: fixed;
+    bottom: 10px;
+    right: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+    color: white;
+}

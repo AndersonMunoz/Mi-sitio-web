@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+} 
+
+ul{
+    list-style: none;
+    font-size: 1.3em;
+    padding: 2px;
+    margin: 10px;
+} 
+a {
+    text-decoration:rgb(9, 4, 41);
+    color: rgb(0,159,217);
+}
+
+form {
+   width: 400px;
+   justify-content: center;
+   margin-left: 30%;
+   padding: 2px; 
+}
+
+h3 {
+    background-color: rgb(0,159,217);
+    color: white;
+    padding: 15px;
+}
+
+
+
+.cf{
+   border-color: rgb(0,159,217);
+   text-align: none;
+   align-items: center;
+}
+
+.is{
+    padding: 15px ;
+    font-size: 1.2em;
+    color: rgb(0,159,217);
+}
+
+ .is2{
+    padding: 15px;
+ }
+ 
+ .ss{
+    margin: 15px;
+    padding:6px;
+    width: 415px;
+ }
+
+ .ss2{
+    margin: 15px;
+ }
+
+ .oc{
+    color: rgb(0,159,217);
+    text-align: right;
+    margin-right: 15px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 0.8em;
+ }
+
+ input[type="text"] {
+    padding: 6px;
+    width: 400px;
+    border: 1px solid grey;
+ }
+
+ input:focus{
+    background-color: rgb(232,240,254);
+    outline-color: green;
+    box-shadow: 2px 2px 4px rgb(114, 204, 114), -2px -2px 4px rgb(114, 204, 114);
+   }
+
+ input:hover {
+    background-color: rgb(232,240,254);
+    outline-color: green;
+    box-shadow: 2px 2px 4px rgb(114, 204, 114), -2px -2px 4px rgb(114, 204, 114);
+ }
+
+
+button{
+    margin: 8px 21px;
+    width: 400px;
+    padding: 12px;
+    background-color: rgb(0,105,167);
+    color: white;
+    border-radius: 1px 30%;
+    border-color: rgb(0,105,167) ;
+
+}
+
+button:hover {
+    background-color: rgb(0,64,83);
+    cursor: pointer;
+  }
+
+  ul:hover{
+    opacity: 0.8;
+  }
+

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li {
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    position: relative;
+}
+ nav {
+    background-color: rgb(10, 34, 141);
+    width: 100%;
+ }
+
+ ul {
+    text-align: right;
+    list-style: none;
+ }
+
+ .menu-bar {
+    display: none;
+ }
+
+ nav ul li {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.1em;
+ }
+
+ li:hover {
+    cursor: pointer;
+    background-color: rgb(32, 60, 184);
+    margin: 0;
+ }
+
+ a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+ .children {
+    position: absolute;
+    display: none;
+    background-color: rgb(66, 95, 226);
+    text-align: right;
+    top:25px;
+ }
+
+ nav ul li:hover .children {
+    display: block;
+    width: 130%;
+    text-align: left;
+    top: 61px;
+    left: 0;
+
+ }
+
+ nav ul li:hover .children li  {
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgb(255,255, 255);
+ }
+
+ nav ul li .children a {
+    display: block;
+ }
+
+ .main-content {
+    margin: 30px;
+ }
+
+h1 {
+    margin: 35px;
+    text-align: right;
+    color: rgb(64,64,64,0.8)
+}
+
+p{
+    font-size: 1.3em;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+.icon-chevron-small-down {
+    float: right;
+    position: relative;
+    top: 3px;
+    padding-left: 5px;
+}
+ @media only screen and (max-width:700px) {
+    body {
+        padding-top: 70px;
+    }
+    nav {
+        position: fixed;
+        height: 100vh;
+        width: 60%;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .menu-bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: rgb(107, 175, 207);
+    }
+
+    .bt-menu{
+        display: block;
+        padding: 20px;
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+     .menu-bar span {
+        font-size: 40px;
+        float: right;
+     }
+
+     nav ul {
+        text-align: left;
+     }
+
+     nav ul li {
+        display: block;
+        border-bottom: 1px solid rgb(32, 60, 184);
+     }
+
+     nav ul .children {
+        position: relative;
+        width: 100%;
+     }
+
+     nav ul li:hover .children {
+        display: none;
+     }
+ }

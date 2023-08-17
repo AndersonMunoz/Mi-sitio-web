@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <ul class="Pri">
+        <li><a href="index.html">Inicio</a></li>
+    </ul>
+    <h1>Citas médicas</h1>
+    <form>
+        <fieldset>
+            <legend>Ingrese la información</legend> 
+            <label><br>Ingrese su tipo de documento</label>
+                <select>
+                    <option>Registro Civil</option>
+                    <option>Tarjeta de Indentidad</option>
+                    <option>Cédula de Ciudadanía</option>
+                    <option>Cédula de Extranjería</option>
+                </select><br>
+            <label><br>Ingrese su número de documento</label>
+                <input type="text" placeholder="Ingrese su documento">
+            <label><br>Ingrese su(s) nombre(s)</label>
+                <input type="text" placeholder="Ingrese su(s) nombre(s)">
+            <label><br>Ingrese su(s) apellido(s)</label>
+                <input type="text" placeholder="Ingrese su(s) apellido(s)">
+            <label><br>Ingrese su género</label>
+                <input type="radio" name="genero">Masculino<br>
+                <input type="radio" name="genero">Femenino<br>
+                <input type="radio" name="genero">No binarie<br>
+            <label><br>Seleccione el día de la cita</label> 
+                <input type="checkbox" name="diacita">Lunes<br>
+                <input type="checkbox" name="diacita">Martes<br>
+                <input type="checkbox" name="diacita">Miércoles<br>
+                <input type="checkbox" name="diacita">Jueves<br>
+                <input type="checkbox" name="diacita">Viernes<br>
+            <label><br>Dudas e Inquietudes</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                <button>Enviar</button>
+                <button>Confirmar</button>
+        </fieldset>
+    </form>
+ </body>
+</html>

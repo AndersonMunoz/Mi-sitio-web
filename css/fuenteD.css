@@ -1,0 +1,21 @@
+body {
+    background-color: navy;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    font-size: 8em;
+    font-family: 'Waltograph',sans-serif;
+    color: aliceblue;
+}
+/* allura-regular - latin */
+@font-face {
+    font-family: 'Waltograph';
+    font-weight: 10;
+    src: url('../fonts/waltograph42.otf');
+    src: local(''),
+         url('../fonts/waltograph42.otf') 
+         url('../fonts/waltographUI.ttf') format('truetype');
+  }

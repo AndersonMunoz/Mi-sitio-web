@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}
+
+.box-main {
+    background-image: url("../img/web_first_images_release_0.png");
+   /*  width: 2048px; */
+    height: 1186px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-2 {
+    background-image: url("../img/600x400\ espacio.jpg");
+    width: 600px;
+    height: 400px;
+}
+
+nav {
+    padding: 0;
+}
+ul {
+    width: 100%;
+    text-align: right;
+    height: 100px;
+    margin: 0;
+}
+
+li {
+    padding: 15px;
+    color: rgb(255, 145, 0);
+    display: inline-block;
+    font-size: 1.4em;
+    background-color: rgb(0,0,0,0.4);
+    border-radius: 5px;
+    text-shadow: 2px 2px 0 black;
+}
+ .last-item {
+    margin-right: 80px;
+ }
+
+ a{
+    text-decoration: none;
+    color: rgb(255, 145, 0);
+ }
+
+ li:hover {
+    background-color: rgba(65, 62, 62, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+ }

@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}  
+
+label{
+    display: block;
+}
+
+a {
+    text-decoration:rgb(9, 4, 41);
+    color: rgb(9, 4, 41);
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(9, 4, 41);
+    color: white;
+} 
+
+form {
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    margin-left: 35%;
+    margin-top: 10px; 
+    background-color: rgb(243, 243, 243);
+} 
+
+ul{
+    list-style: none;
+    font-size: 1.3em;
+    padding: 2px;
+} 
+
+input[type="text"] {
+    padding: 6px;
+    font-size: 1.1em;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid black    ;
+}
+input[type="text"]:focus {
+    outline: none;
+}
+
+input:focus{
+    background-color: rgb(232,240,254);
+    box-shadow: 2px 2px 4px rgb(129, 129, 129), -2px -2px 4px rgb(129, 129, 129);
+   }
+
+input:hover{
+    background-color: rgb(232,240,254);
+    box-shadow: 2px 2px 4px rgb(129, 129, 129), -2px -2px 4px rgb(129, 129, 129);
+   }
+
+textarea:focus{
+    background-color: rgb(232,240,254);
+    box-shadow: 2px 2px 4px rgb(129, 129, 129), -2px -2px 4px rgb(129, 129, 129);
+}
+
+textarea:hover{
+    background-color: rgb(232,240,254);
+    box-shadow: 2px 2px 4px rgb(129, 129, 129), -2px -2px 4px rgb(129, 129, 129);
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(224, 228, 241);
+    border-radius: 15%;
+    border: none;
+}
+ 
+button:hover {
+    background-color: rgb(207, 215, 241);
+    border: none;
+}
+

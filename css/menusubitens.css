@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.boton-menu {
+    background-color: rgb(41, 124, 124);
+    width: 120px;
+    height: 30px;
+    color: white;
+}
+
+.boton-menu:hover {
+    background-color: rgb(35, 102, 102);
+    color: white;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: white;
+    color: white;
+    display: block;
+    padding: 0 3em;
+}
+
+nav {
+    font-size: 1.5em;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    display: table;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(35, 102, 102);
+    text-align: center;
+    justify-content: center;
+}
+
+nav>ul>li{
+    float: left;
+    width: 320px;
+    line-height: 70px;
+}
+
+.menu:hover {
+    background-color: rgb(24, 68, 68);
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+
+nav li {
+    position: relative;
+}
+
+nav li li {
+    max-height: 0;
+    overflow: hidden;
+}
+
+nav li:hover > ul >li {
+    visibility: visible;
+    max-height: 500px;
+    overflow: visible;
+}
+
+.b1 {
+    border-radius: 10px;
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+}

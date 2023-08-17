@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.main-nav{
+    width: 100%;
+    background-color: rgb(9, 97, 23);
+    position: fixed;
+    height: 80px;
+}
+
+.bar-menu{
+    color: white;
+    font-size: 2.2em;
+    text-align: right;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+}
+.main-menu {
+    list-style: none;
+    text-align: right;
+}
+a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.item-main-menu{
+    display: inline-block;
+    padding: 25px 45px;
+    cursor: pointer;
+}
+.item-main-menu:hover{
+    background-color: rgba(6, 54, 14, 0.9);
+}
+
+p{
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+@media only screen  and (max-width:1152px) {
+    .item-main-menu{
+        display: block;
+        background-color: rgba(9, 97, 23, 0.9);
+        color: black;
+        text-align: center;
+        position: relative;
+        border-bottom: 1px solid white;
+    }
+
+    .item-main-menu:hover{
+        background-color: rgba(6, 54, 14, 0.9);
+    }
+    .bar-menu{
+        visibility: visible;
+        padding: 25px 45px;
+        padding-bottom: 10px;
+        width: 100%;
+       }
+    .bar-menu:hover{
+        cursor: pointer;
+    }
+    .main-menu{
+        margin-top: 81px;
+        display: none;
+    }
+
+    .main-menu-visible {
+        display: block;
+        margin-top: 81px;
+    }
+}

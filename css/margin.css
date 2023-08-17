@@ -1,0 +1,42 @@
+.box {
+    display: inline-flex;
+    width: 200px;
+    height: 215px;
+    letter-spacing: .1em;
+    word-spacing: -0.1em;
+    line-height: 1 em;
+    color: white;
+    margin: 10px 10px 10px 10px;
+    padding: 20px;
+    text-indent: 0.8 em;
+}
+
+.box-1 {
+    border: 6px solid rgb(61, 219, 122);
+    background-color: rgb(15, 88, 25);
+    text-align: center;
+}
+
+.box-2 {
+    border: 6px dotted rgb(40, 160, 190);
+    background-color: rgb(14, 8, 65);
+    text-align: right;
+}
+
+.box-3 {
+    border: 6px dashed rgb(204, 40, 182);
+    background-color: rgb(57, 9, 71);
+    text-align: left;
+}
+
+.box-4 {
+    border: 6px double  rgb(255, 251, 0);
+    background-color: rgb(97, 88, 10);
+    text-align: justify;
+}
+
+.box-5 {
+    border: 6px groove rgb(212, 119, 119);
+    background-color: rgb(100, 7, 7);
+    text-align: justify;
+}
