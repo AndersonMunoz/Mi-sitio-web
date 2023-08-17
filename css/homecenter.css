@@ -239,6 +239,164 @@ input[type="text"]:focus {
     align-items: center;
 }
 
+.chat{
+    height: 570px;
+    width: 400px;
+    position: fixed;
+    border-radius: 10px;
+    right: 37px;
+    bottom: 90px;
+    box-shadow: 5px 5px 5px  1px rgb(179, 179, 179);
+    transition: all 400ms;
+}
+
+.chat-hidden{
+    display: none;
+    transition: all 1000ms;
+}
+
+.chat-header{
+    width: 100%;
+    background-color: rgb(0,93,193);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display:grid;
+    grid-template:"anita    letrero" 70px/
+                    75px    325px;
+}
+
+.she-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: anita;
+}
+.chat-letter-header{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.25em;
+    grid-area: letrero; 
+    color: white;
+}
+
+.home-let{
+    margin-left: 8px;
+}
+
+.chat-middle{
+    height: 445px;
+    width: 100%;
+    background-color: rgb(234,238,243);
+    display: grid;
+    grid-template:"photo parra arrow" 445px/
+                    45px   1fr 45px;
+    font-size: 0.98em;
+}
+
+.photo{
+    width: 100%;
+    grid-area: photo;
+}
+.arrow{
+    width: 100%;
+    grid-area: arrow;
+}
+
+.parra{
+    width: 100%;
+    grid-area: parra;
+    display: grid;
+    grid-template:"welcome" 115px
+                    "ana-photo"100px
+                    "ask"100px
+                    "slider" 100px/
+                    1fr;
+    overflow-y: auto;
+    overflow-x: none;
+}
+
+.welcome{
+    grid-area: welcome;
+    width: 240px;
+    height: 65px;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.ana-text-img{
+    width: 98px;
+    grid-area: ana-photo;
+    border-radius: 10px;
+}
+
+.ask{
+    width: 240px;
+    height: 100px;
+    padding: 12px;
+    grid-area: ask;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main-slider{
+    width: 290px;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 60px;
+}
+
+.chat-box{
+    width: 100%;
+    background-color: rgb(234,238,243);
+    border-top: 2px solid blue;
+    display: grid;
+    grid-template: "textoo emojii" 55px/
+                    1fr     60px;
+                    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chat-text{
+    grid-area: textoo;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-emoji{
+    grid-area: emojii;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2em;
+    color: blue;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: none;
+    height: 20px;
+    background-color: transparent;
+    font-size: 1.0001em;
+    color: rgb(90, 90, 90);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fa-face-smile-beam:hover{
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 1250px) {
     .logo-hc{
@@ -364,4 +522,5 @@ input[type="text"]:focus {
         
     }    
 }
+
 

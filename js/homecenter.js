@@ -6,6 +6,7 @@ let ana = document.getElementById("ana");
 let mujerYAna = document.getElementById("mujerYAna");
 let ayudaBox = document.getElementById("ayudaBox");
 let xCircle = document.getElementById("xCircle");
+let chatBox = document.getElementById("chatBox");
 
 lupaCel.addEventListener("click",function(){
     seekerCellID.classList.add("seekerCell-hidden");
@@ -28,6 +29,8 @@ ana.addEventListener("click",function(){
         ana.classList.remove("asistente");
         xCircle.classList.add("x-circle-hidden");
         xCircle.classList.remove("x-circle");
+        chatBox.classList.add("chat");
+        chatBox.classList.remove("chat-hidden");
     } else {
         mensajeAyuda.classList.add("mensaje-ayuda");
         mensajeAyuda.classList.remove("mensaje-ayuda-hidden");
@@ -39,5 +42,7 @@ ana.addEventListener("click",function(){
         ana.classList.add("asistente");
         xCircle.classList.remove("x-circle-hidden");
         xCircle.classList.add("x-circle");
+        chatBox.classList.remove("chat");
+        chatBox.classList.add("chat-hidden");
     }
 })
