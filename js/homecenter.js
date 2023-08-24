@@ -45,4 +45,4 @@ ana.addEventListener("click",function(){
         chatBox.classList.remove("chat");
         chatBox.classList.add("chat-hidden");
     }
-})
+});

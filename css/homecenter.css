@@ -289,10 +289,11 @@ input[type="text"]:focus {
     height: 445px;
     width: 100%;
     background-color: rgb(234,238,243);
-    display: grid;
-    grid-template:"photo parra arrow" 445px/
-                    45px   1fr 45px;
     font-size: 0.98em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
 }
 
 .photo{
@@ -305,16 +306,18 @@ input[type="text"]:focus {
 }
 
 .parra{
-    width: 100%;
+    width: 80%;
+    height: 100%;
     grid-area: parra;
-    display: grid;
-    grid-template:"welcome" 115px
-                    "ana-photo"100px
-                    "ask"100px
-                    "slider" 100px/
-                    1fr;
-    overflow-y: auto;
-    overflow-x: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: none;
+
+}
+
+.parra::-webkit-scrollbar {
+    display: none;
 }
 
 .welcome{
@@ -341,17 +344,26 @@ input[type="text"]:focus {
     padding: 12px;
     grid-area: ask;
     background-color: rgb(255, 255, 255);
-    margin-top: 20px;
+
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.main-slider{
-    width: 290px;
-    height: 120px;
-    background-color: rgb(255, 255, 255);
-    margin-top: 60px;
+
+
+.dots{
+    color: rgb(159, 175, 248);
+    grid-area: dots;
+    width: 100%;
+    margin: 10px 0px 40px 0px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.mini-dot{
+    font-size: 0.4em;
+    margin-left: 10px;
 }
 
 .chat-box{
@@ -397,7 +409,94 @@ input[type="text"] {
 .fa-face-smile-beam:hover{
     cursor: pointer;
 }
+.div-main-slider{
+    overflow: hidden;
+    width: 100%;
+    flex: none;
+    height: 120px;
+}
+.all-slider{
+    position: relative;
+}
+.circulo-izq{
+    background-color: aquamarine;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -33px;
+    bottom: 110px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
 
+.fa-chevron-left{
+    margin-top: 2px;
+}
+.main-slider{
+    width: 315px;
+    height: 120px;
+    overflow: hidden;
+}
+.containt-slider{
+    display: flex;
+    gap: 10px;
+    margin-left:0;
+}
+
+.slider{
+    width: 300px;
+    height: 117px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 1px rgb(146, 146, 146);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+}
+
+.slider-text{
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 79px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.click-here{
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    border-top: 1px solid rgb(196, 196, 196);
+}
+.click-here:hover {
+    background-color: rgb(172,185,255);
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    border-top: none
+}
+p{
+    width: 100%;
+}
+b{
+    color:blue
+}
+
+span{
+    font-size: 0.7em;
+    color: grey;
+}
 @media only screen and (max-width: 1250px) {
     .logo-hc{
         display: none;
