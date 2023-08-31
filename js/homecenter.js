@@ -12,10 +12,6 @@ let rightArrow = document.getElementById("rightArrow");
 let sliderMoving = document.getElementById("sliderMoving");
 let currentIndex = 0;
 let dots = document.querySelectorAll(".mini-dot");
-/* let dot1 = document.getElementById("dot1");
-let dot2 = document.getElementById("dot2");
-let dot3 = document.getElementById("dot3");
-let dot4 = document.getElementById("dot4"); */
 
 lupaCel.addEventListener("click",function(){
     seekerCellID.classList.add("seekerCell-hidden");
@@ -59,7 +55,7 @@ ana.addEventListener("click",function(){
 leftArrow.style.display = "none";
 
 rightArrow.addEventListener("click", function () {
-    dots[currentIndex].style.fontSize = "0.01em"; // Restaura el tamaño de fuente del punto actual
+    dots[currentIndex].style.fontSize = "0.1em"; // Restaura el tamaño de fuente del punto actual
     currentIndex++;
     if (currentIndex === 1) {
         leftArrow.style.display = "flex"; 
@@ -70,7 +66,7 @@ rightArrow.addEventListener("click", function () {
     }
     sliderMoving.style.transform = `translateX(-${currentIndex * 102}%)`;
     leftArrow.style.display = "flex"; 
-    dots[currentIndex].style.fontSize = "0.4em"; // Ajusta el tamaño de fuente del nuevo punto actual
+    dots[currentIndex].style.fontSize = "0.5em"; // Ajusta el tamaño de fuente del nuevo punto actual
 });
 
 leftArrow.addEventListener("click", function () {
@@ -85,7 +81,7 @@ leftArrow.addEventListener("click", function () {
     }
     sliderMoving.style.transform = `translateX(-${currentIndex * 102}%)`;
     rightArrow.style.display = "flex"; 
-    dots[currentIndex].style.fontSize = "0.4em"; // Ajusta el tamaño de fuente del nuevo punto actual
+    dots[currentIndex].style.fontSize = "0.5em"; // Ajusta el tamaño de fuente del nuevo punto actual
 });
 
 
