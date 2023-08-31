@@ -55,7 +55,7 @@ ana.addEventListener("click",function(){
 leftArrow.style.display = "none";
 
 rightArrow.addEventListener("click", function () {
-    dots[currentIndex].style.fontSize = "0.1em"; // Restaura el tamaño de fuente del punto actual
+    dots[currentIndex].style.fontSize = "0.1em"; 
     currentIndex++;
     if (currentIndex === 1) {
         leftArrow.style.display = "flex"; 
@@ -66,11 +66,11 @@ rightArrow.addEventListener("click", function () {
     }
     sliderMoving.style.transform = `translateX(-${currentIndex * 102}%)`;
     leftArrow.style.display = "flex"; 
-    dots[currentIndex].style.fontSize = "0.5em"; // Ajusta el tamaño de fuente del nuevo punto actual
+    dots[currentIndex].style.fontSize = "0.5em"; 
 });
 
 leftArrow.addEventListener("click", function () {
-    dots[currentIndex].style.fontSize = "0.01em"; // Restaura el tamaño de fuente del punto actual
+    dots[currentIndex].style.fontSize = "0.01em"; 
     currentIndex--;
     if (currentIndex === 2) {
         rightArrow.style.display = "flex";
@@ -81,7 +81,7 @@ leftArrow.addEventListener("click", function () {
     }
     sliderMoving.style.transform = `translateX(-${currentIndex * 102}%)`;
     rightArrow.style.display = "flex"; 
-    dots[currentIndex].style.fontSize = "0.5em"; // Ajusta el tamaño de fuente del nuevo punto actual
+    dots[currentIndex].style.fontSize = "0.5em"; 
 });
 
 
