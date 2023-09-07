@@ -111,7 +111,7 @@
               </select>
         </div>
     </div>
-    <h1 class="text-center">Formulario 3 de valicadciób</h1>
+    <h1 class="text-center">Formulario 3 de validación</h1>
     <div class="container">
         <div class="mb-3">
             <div class="form-floating mb-3">
@@ -144,6 +144,130 @@
                 </div>
               </div>
         </div>
+    </div>
+    <h1 class="text-center">Validación de formulario</h1>
+    <div class="container">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          <div class="valid-feedback">
+            ¡Se ve bien! :D
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+            ¡Se ve bien! :D
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor escoja un nombre de usuario.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Por favor ingrese una ciudad válida.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Departamento</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Seleccione</option>
+            <option>Huila</option>
+            <option>Caquetá</option>
+            <option>Putumayo</option>
+            <option>Tolima</option>
+            <option>Meta</option>
+            <option>Cundinamarca</option>
+          </select>
+          <div class="invalid-feedback">
+            Por favor seleccione un departamento válido
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Código postal</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Por favor ingrese un código postal válido.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Aceptar términos y condiciones.
+            </label>
+            <div class="invalid-feedback">
+              Debes estar deacuerdo antes de enviar.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar formulario</button>
+        </div>
+      </form>
+    </div>
+    <script src="js/validar-form.js"></script>
+    <h1 class="text-center">Validación de formulario 2</h1>
+    <div class="container">
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationDefault01" value="" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Apelldio</label>
+          <input type="text" class="form-control" id="validationDefault02" value="" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label">Nombre de usuario</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">Departamento</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Escoger...</option>
+            <option>Huila</option>
+            <option>Caquetá</option>
+            <option>Putumayo</option>
+            <option>Tolima</option>
+            <option>Meta</option>
+            <option>Cundinamarca</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">Código postal</label>
+          <input type="text" class="form-control" id="validationDefault05" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Aceptar términos  y condiciones
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar formulario</button>
+        </div>
+      </form>
     </div>
 </body>
 </html>
