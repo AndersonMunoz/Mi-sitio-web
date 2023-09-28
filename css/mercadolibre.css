@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media only screen and (max-width: 1270px) {
+    .main-container{
+        width: 100%;
+        height: 50px;
+        display: flex;
+    }
+    
+    .header {
+        width: 100%;
+        background-color: RGB(255,241,89);
+        height: 50px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template:"logo seeker hamburger cart"50px/
+                        85px 1fr 42px 42px;
+    }
+    
+    img{
+        width: 60%;
+    }
+    .imagen{
+        width: 100%;
+        grid-area: logo;
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seeker{
+        grid-area: seeker;
+        width: 100%;
+        height: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template:"magni main-seeker"50px/
+                        40px   1fr;
+    }
+
+    .magini{
+        grid-area: magni;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background-color: white;
+    }
+    .main-seeker{
+        grid-area:main-seeker;
+        width: 100%; 
+        height: 40px;
+    }
+
+    .input-seeker{
+        width: 90%;
+        height: 40px;
+        border: none;
+    }
+    .box-auto{
+        width: 100%;
+        height: 200px;
+        background-color: red;
+        display: grid;
+        grid-template: "box-img box-info" 250px/
+                        1fr 1fr;
+    }
+
+    .box-img{
+        grid-area:box-img;
+    }
+
+    .box-info{
+        grid-area:box-info;
+    }
+    
+}
+
