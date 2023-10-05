@@ -65,21 +65,77 @@
         border: none;
     }
     .box-auto{
-        width: 100%;
-        height: 200px;
-        background-color: red;
+        margin-top: 20px;
         display: grid;
-        grid-template: "box-img box-info" 250px/
-                        1fr 1fr;
+        grid-template:"empty-left box-img box-info empty-right" /
+                       20px       6fr     7fr      20px;
     }
-
-    .box-img{
-        grid-area:box-img;
+    .box-img {
+        grid-area: box-img;
     }
-
+    
     .box-info{
-        grid-area:box-info;
+        grid-area: box-info;
+        margin-left: 15px;
+        
     }
+    
+    .img-auto {
+        width: 100%;
+        position: relative;
+        top: -20px;
+        z-index: 10;
+    }
+    .box-corazon{
+        visibility: hidden;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .corazon{
+        width: 28px;
+        height: 28px;
+        border-radius: 14px;
+        position: relative;
+        left: -10px;
+        background-color: rgb(255, 255, 255, .5);
+        z-index: 20;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box-img:hover{
+        cursor: pointer;
+    }
+    
+    .box-img:hover > .box-corazon{
+    visibility: visible;
+    }
+    .icons-style-hearth{
+        color: rgb(57, 57, 233, .8);
+    
+    }
+    .info-marca{
+        display: flex;
+        flex-direction: row;
+    }
+    .txt-precio {
+        font-size: 1.6em;
+        font-weight: 400;
+    }
+    .txt-marca,.txt-modelo {
+        font-size: .8em;
+        margin-right: 10px;
+    }
+    .box-procedencia{
+        font-size: .7em;
+    
+    }
+    .box-linea-div{
+        height: 1px;
+        background-color: rgb(200, 200, 200, .6);
+    }
+
     
 }
 
