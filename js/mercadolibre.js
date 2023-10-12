@@ -29,8 +29,7 @@ let inputBusqueda = document.getElementById("busqueda");
 inputBusqueda.addEventListener("keydown", function(event){
     mainContent.innerHTML ="";
     if (event.key == "Enter") {
-        carArrays.forEach(function(auto, indice) {
-            console.log("Auto " + (indice + 1) + ":");
+        carArrays.forEach(function(auto) {
         let mainContent = document.getElementById("mainContent");
         let boxAuto = document.createElement("div");
         mainContent.appendChild(boxAuto);
