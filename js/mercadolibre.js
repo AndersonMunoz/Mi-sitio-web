@@ -27,7 +27,7 @@ var carArrays = [auto1, auto2, auto3,auto4, auto5, auto6, auto7, auto8, auto9, a
 let inputBusqueda = document.getElementById("busqueda");
 
 inputBusqueda.addEventListener("keydown", function(event){
-    
+    mainContent.innerHTML ="";
     if (event.key == "Enter") {
         carArrays.forEach(function(auto, indice) {
             console.log("Auto " + (indice + 1) + ":");
