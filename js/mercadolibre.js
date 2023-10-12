@@ -90,7 +90,7 @@ inputBusqueda.addEventListener("keydown", function(event){
         let txtKilometros = document.createElement("label");
         boxProcedencia.appendChild(txtKilometros);
         let txtKilometrosFormat = new Intl.NumberFormat("de-DE").format(auto1.Kilometros);
-        txtKilometros.innerHTML = txtKilometrosFormat + " km · ";
+        txtKilometros.innerHTML = txtKilometrosFormat + " km  · ";
 
         let txtciudad = document.createElement("label");
         boxProcedencia.appendChild(txtciudad);
