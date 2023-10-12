@@ -30,8 +30,7 @@ inputBusqueda.addEventListener("keydown", function(event){
     mainContent.innerHTML ="";
     if (event.key == "Enter") {
         carArrays.forEach(function(auto, indice) {
-
-            
+            console.log("Auto " + (indice + 1) + ":");
         let mainContent = document.getElementById("mainContent");
         let boxAuto = document.createElement("div");
         mainContent.appendChild(boxAuto);
