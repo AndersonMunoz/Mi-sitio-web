@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banderas API</title>
+    <script src="https://kit.fontawesome.com/33ad4783f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/banderas.css">
+</head>
+<body>
+    <div class="header">
+        <h1>¿Dónde en el mundo?</h1>
+        <button class="toggle"><i class="fa-regular fa-moon"></i>&nbsp;Modo Oscuro</button>
+    </div>
+    <div class="supercontainer">
+        
+        <div class="container">
+            <div class="pais">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar un país...">
+            </div>
+            <div class="continentes">
+                <div class="lista-continentes"  id="desplegar">
+                    <p>Filtrar por contienente</p>&nbsp;
+                    <button class="flecha-abajo"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+                <div id="listaCont"class="despliegue">
+                    <p class="nombre-continente">Todos</p>
+                    <p class="nombre-continente">Africa</p>
+                    <p class="nombre-continente">America</p>
+                    <p class="nombre-continente">Asia</p>
+                    <p class="nombre-continente">Europa</p>
+                    <p class="nombre-continente">Oceania</p>
+                </div>
+            </div>
+        </div>
+        <div class="cada-pais">
+        </div>
+    </div>
+    
+</body>
+<script src="./js/banderas.js"></script>
+</html>

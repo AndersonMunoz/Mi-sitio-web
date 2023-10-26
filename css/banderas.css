@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(250, 250, 250);
+}
+
+.supercontainer{
+    display: grid;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    grid-template:
+                    "empty-1 container  empty-2" 200px
+                    "empty-1 cadapais  empty-2" 500px/
+                    1fr   1300px        1fr;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
+}
+
+h1{
+    font-weight: 900;
+    
+}
+
+.toggle{
+    margin-left: 600px;
+    padding: 12px;
+    border: none;
+    background-color: white;
+    font-size: 1.2em;
+    transition: all 400ms;
+}
+
+.toggle:hover {
+    background: rgb(241, 241, 241);
+    transition: all 400ms;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.container{
+    grid-area: container;
+    width: 100%;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template:"pais continentes" 70px/
+                    500px        600px;
+}
+
+.pais {
+    grid-area: pais;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items:center ;
+}
+.fa-magnifying-glass{
+    color: rgb(182,182,182);
+    width: 5%;
+    padding: 10px;
+}
+.fa-magnifying-glass:hover{
+    cursor: pointer;
+    text-align: center;
+
+}
+input[type="text"] {
+    font-size: 1em;
+    width: 400px;
+    border: none;
+    outline: none;
+    padding: 12px;
+}
+
+input[type="text"]:focus {
+
+    border: none;
+}
+
+.continentes{
+    grid-area: continentes;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.continentes:hover{
+    cursor: pointer;
+}
+
+.lista-continentes-hidden {
+    display: none;
+}
+
+.lista-continentes{
+    margin-top: 20px;
+    width: 240px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
+}
+
+.lista-continentes:hover{
+    cursor: pointer;
+}
+
+
+.flecha-abajo{
+    border: none;
+    background-color: transparent;
+}
+
+.cada-pais{
+    grid-area: cadapais;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px;}
+.paises{
+    height: auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(177, 177, 177);
+    margin-bottom: 50px;
+    padding: 12px;
+}
+
+.paises:hover {
+    cursor: pointer;
+}
+
+.bandera1{
+    width: 100%;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+
+.info{
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+}
+
+.title{
+    font-size: 1.1em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.subtitle{
+    font-weight: 900;
+}
+
+.despliegue{
+   display: none;
+}
+
+.despliegue-hidden{
+    width: 240px;
+    position: absolute;
+    top: 150px;
+    padding: 10px;
+    background-color: white;
+     box-shadow: 0px 2px 5px 1px rgb(200, 200, 200);
+ }
