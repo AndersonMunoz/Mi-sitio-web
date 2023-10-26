@@ -24,7 +24,7 @@ function mostrarPais(data) {
     <img class="bandera1" src="${data.flag}">
     <p class="title">${data.name}</p><br>
     <p class="subtitle">Población:</p><p>${data.population}</p><br>
-    <p class="subtitle region">Contienente:</p><p>${data.region}</p><br>
+    <p class="subtitle region">Continente:</p><p>${data.region}</p><br>
     <p class="subtitle">Capital:</p><p>${data.capital}</p>`;
     paisesCaja.appendChild(pais);
     pais.addEventListener("click",()=>{
