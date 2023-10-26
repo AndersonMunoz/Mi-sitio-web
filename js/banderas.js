@@ -17,7 +17,7 @@ obtenerPais();
 
 function mostrarPais(data) {
     const pais = document.createElement("div");
-    pais.classList.add("paises"); // Añade la clase "paises" al div del país
+    pais.classList.add("paises"); 
     pais.innerHTML = `
     <img class="bandera1" src="${data.flag}">
     <p class="title">${data.name}</p><br>
@@ -25,7 +25,7 @@ function mostrarPais(data) {
     <p class="subtitle">Población:</p><p>${data.population}</p><br>
     <p class="subtitle region">Contienente:</p><p>${data.region}</p><br>
     <p class="subtitle">Capital:</p><p>${data.capital}</p>`;
-    paisesCaja.appendChild(pais); // Añade el nuevo div del país a ".cada-pais"
+    paisesCaja.appendChild(pais); 
 }
 
 desplegar.addEventListener("click", () => {
