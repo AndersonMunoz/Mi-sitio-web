@@ -17,7 +17,7 @@ obtenerPais();
 
 function mostrarPais(data) {
     const pais = document.createElement("div");
-    pais.classList.add("paises"); 
+    pais.classList.add("paises");
     pais.innerHTML = `
     <img class="bandera1" src="${data.flag}">
     <p class="title">${data.name}</p><br>
@@ -25,7 +25,7 @@ function mostrarPais(data) {
     <p class="subtitle">Población:</p><p>${data.population}</p><br>
     <p class="subtitle region">Contienente:</p><p>${data.region}</p><br>
     <p class="subtitle">Capital:</p><p>${data.capital}</p>`;
-    paisesCaja.appendChild(pais); 
+    paisesCaja.appendChild(pais);
 }
 
 desplegar.addEventListener("click", () => {
@@ -39,12 +39,16 @@ desplegar.addEventListener("click", () => {
 });
 
 nombreContienente.forEach(pais => {
-    pais.addEventListener("click", () => {
+    pais.addEventListener("click", (data) => {
+        console.log("Elemento :", pais)
         const continenteElegido = pais.textContent.toLowerCase();
+        console.log("elegifo: ", continenteElegido);
         const paises = document.querySelectorAll(".paises");
+        console.log("paises: ", pais);
         paises.forEach(pais => {
+            console.log("pais: " , pais);
             const region = pais.querySelector(".region").textContent.toLowerCase();
-            if (continenteElegido === "todos" || continenteElegido === region) {
+            if (continenteElegido === "todos" || continenteElegido === data.region) {
                 pais.style.display = "grid";
             } else {
                 pais.style.display = "none";

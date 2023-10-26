@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.img-fondo{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/vaquero.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    align-items: center;
+}
+
+.fondo{
+    width: 100%;
+}
+
+.rango {
+    position: absolute;
+    width: 400px;
+    bottom: 0px;
+    left: 100px;
+    transition: 2s;
+    transform: scaleX(1);
+}
+
+.rango:hover,.rango-movimiento:hover{
+    cursor: pointer;
+}
+
+.rango-movimiento{
+    position: absolute;
+    width: 400px;
+    bottom: 0px;
+    left:1200px;
+    transition: 2s;
+}
+
+.rango-alreves{
+    transform: scaleX(-1);
+    transition: 2s;
+    width: 400px;
+    bottom: 0px;
+    left: 100px;
+}
+
+
+
