@@ -18,8 +18,11 @@
     width: 100%;
 }
 
+.recorrido {
+    width: 100%;
+}
 .rango {
-    position: absolute;
+    position: fixed;
     width: 400px;
     bottom: 0px;
     left: 100px;
@@ -36,12 +39,10 @@
     width: 400px;
     bottom: 0px;
     left:1200px;
-    transition: 2s;
 }
 
 .rango-alreves{
     transform: scaleX(-1);
-    transition: 2s;
     width: 400px;
     bottom: 0px;
     left: 100px;

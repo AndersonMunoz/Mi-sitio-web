@@ -1,16 +1,21 @@
 let rango = document.getElementById("rango");
+let recorrido = document.querySelector(".recorrido");
+let position = 100;
 
-window.addEventListener("keydown",function(event){
-    if(event.key =="ArrowRight"){
-        rango.classList.add("rango-movimiento")
-        rango.classList.remove("rango")
-        rango.classList.remove("rango-alreves")
-        rango.classList.add("rango-derecho")
-    } else if(event.key =="ArrowLeft"){
-        rango.classList.add("rango-alreves")
-        rango.classList.remove("rango-movimiento")
-        rango.classList.add("rango")
-        rango.classList.remove("rango-derecho")
-    } 
-    
-})
+window.addEventListener("keydown", function(event) {
+    const recorridoWidth = recorrido.clientWidth;
+    const rangoWidth = rango.clientWidth;
+
+    if (event.key === "ArrowRight") {
+        position += 20; 
+        rango.style.transform = "scaleX(1)";
+    } else if (event.key === "ArrowLeft") {
+        position -= 20; 
+        rango.style.transform = "scaleX(-1)"; 
+    }
+
+    position = Math.max(0, Math.min(recorridoWidth - rangoWidth, position));
+
+
+    rango.style.left = position + "px";
+});
