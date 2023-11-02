@@ -7,12 +7,15 @@ window.addEventListener("keydown", function(event) {
     const rangoWidth = rango.clientWidth;
 
     if (event.key === "ArrowRight") {
-        position += 20; 
+        position += 50; 
         rango.style.transform = "scaleX(1)";
     } else if (event.key === "ArrowLeft") {
-        position -= 20; 
+        position -= 50; 
         rango.style.transform = "scaleX(-1)"; 
-    }
+    } else if (event.key === "ArrowUp") {
+        position -= 50; 
+        rango.style.transform = "scaleY(1)"; 
+    } 
 
     position = Math.max(0, Math.min(recorridoWidth - rangoWidth, position));
 
