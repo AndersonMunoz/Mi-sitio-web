@@ -10,28 +10,34 @@
     height: 100vh;
     position: relative;
     overflow: hidden; 
+    background-image: url("../img/OIG.jpeg");
+    background-size: auto 100%;
+    background-repeat: repeat-x;
 }
 
-.img-fondo::before {
+
+/* .img-fondo::before {
     content: "";
-    background-image: url("../img/vaquero.jpg");
-    background-size: auto 100%; 
-    width: 200%; 
-    height: 100%; 
+    background-image: url("../img/OIG.jpeg");
+    background-size: auto 100%;
+    width: 200%;
+    height: 100%;
     position: absolute;
+    background-repeat: repeat-x;
     top: 0;
     left: 0;
-    animation: desplazarFondo 15s linear infinite; 
+    animation: desplazarFondo 15s linear infinite;
 }
-
-@keyframes desplazarFondo {
+ */
+/* @keyframes desplazarFondo {
     0% {
         transform: translateX(0);
     }
     100% {
         transform: translateX(-50%);
     }
-}
+} */
+
 
 
 .fondo{
@@ -46,13 +52,11 @@
     width: 400px;
     bottom: 0px;
     left: 100px;
-    transition: 2s;
     transform: scaleX(1);
+    transition: bottom 0.5s; /* Agrega esta línea */
 }
 
-.rango:hover,.rango-movimiento:hover{
-    cursor: pointer;
-}
+
 
 .rango-movimiento{
     position: absolute;
@@ -67,6 +71,5 @@
     bottom: 0px;
     left: 100px;
 }
-
 
 
