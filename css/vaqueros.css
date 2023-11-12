@@ -15,31 +15,6 @@
     background-repeat: repeat-x;
 }
 
-
-/* .img-fondo::before {
-    content: "";
-    background-image: url("../img/OIG.jpeg");
-    background-size: auto 100%;
-    width: 200%;
-    height: 100%;
-    position: absolute;
-    background-repeat: repeat-x;
-    top: 0;
-    left: 0;
-    animation: desplazarFondo 15s linear infinite;
-}
- */
-/* @keyframes desplazarFondo {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-} */
-
-
-
 .fondo{
     width: 100%;
 }
@@ -56,8 +31,6 @@
     transition: bottom 0.5s; /* Agrega esta línea */
 }
 
-
-
 .rango-movimiento{
     position: absolute;
     width: 400px;
@@ -70,6 +43,15 @@
     width: 400px;
     bottom: 0px;
     left: 100px;
+}
+
+.heno {
+    position: fixed;
+    width: 100px;
+    bottom: 20px;
+    left: 100%; 
+    transform: rotate(0deg);
+    display: none;
 }
 
 

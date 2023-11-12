@@ -6,12 +6,18 @@ let direction = 0;
 let jumping = false;
 
 function move() {
-    if (direction === 1 && position < window.innerWidth - rango.offsetWidth) {
+    if (direction === 1 && position < window.innerWidth) {
         position += 5;
         rango.style.transform = "scaleX(1)";
-    } else if (direction === -1 && position > 0) {
+    } else if (direction === -1 && position > -rango.offsetWidth) {
         position -= 5;
         rango.style.transform = "scaleX(-1)";
+    }
+
+    if (position >= window.innerWidth) {
+        position = -rango.offsetWidth;
+    } else if (position <= -rango.offsetWidth) {
+        position = window.innerWidth;
     }
 
     rango.style.left = position + "px";
