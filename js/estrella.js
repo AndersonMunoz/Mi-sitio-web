@@ -1,35 +1,89 @@
 let boton = document.getElementById("boton");
+let star = document.querySelectorAll(".star");
 let valor = document.getElementById("valor");
-let estrella1 = document.getElementById("estrella1");
-let estrella2 = document.getElementById("estrella2");
-let estrella3 = document.getElementById("estrella3");
-let estrella4 = document.getElementById("estrella4");
-let estrella5 = document.getElementById("estrella5");
+
 boton.addEventListener('click', function(){
-    //let valorNum = to(valor.value) 
-    console.log(valor.value)
-    if (valor.value <0 || valor.value>5) {
-        
-        alert("Ingrese un valor válido valores entre 0 y 5")
+    let valorNumerico = parseFloat(valor.value);
+    let starLargo = star.length
+    if (isNaN(valorNumerico) || valorNumerico < 0 || valorNumerico > 5) {
+        alert("Ingrese un valor válido entre 0 y 5");
+    } else {
+        star.forEach(st => {
+            st.classList.remove("fa-regular", "fa-star-half-stroke", "fa-solid", "fa-star");
+            st.classList.add("fa-regular", "fa-star");
+        });
+        if (valorNumerico >= 0 && valorNumerico <0.3 ){
+            for (let i=0;i<=starLargo;i++){
+                star[i].classList.add("fa-regular", "fa-star");
+                star[i].classList.remove("fa-solid", "fa-star-half-stroke");
+            }
+        }
+        if (valorNumerico >= 0.3 && valorNumerico < 0.8) {
+            star[0].classList.remove("fa-regular", "fa-star");
+            star[0].classList.add("fa-solid", "fa-star-half-stroke");
+        } else if (valorNumerico >= 0.8 && valorNumerico < 1.3) {
+            star[0].classList.remove("fa-regular", "fa-star");
+            star[0].classList.add("fa-solid", "fa-star");
+        } else if (valorNumerico >= 1.3 && valorNumerico < 1.8) {
+            star[0].classList.remove("fa-regular", "fa-star");
+            star[0].classList.add("fa-solid", "fa-star");
+            star[1].classList.remove("fa-regular", "fa-star");
+            star[1].classList.add("fa-solid", "fa-star-half-stroke");
+        } else if (valorNumerico >= 1.8 && valorNumerico < 2.3) {
+            star[0].classList.remove("fa-regular", "fa-star");
+            star[0].classList.add("fa-solid", "fa-star");
+            star[1].classList.remove("fa-regular", "fa-star");
+            star[1].classList.add("fa-solid", "fa-star");
+        } else if (valorNumerico >= 2.3 && valorNumerico < 2.8) {
+            star[0].classList.remove("fa-regular", "fa-star");
+            star[0].classList.add("fa-solid", "fa-star");
+            star[1].classList.remove("fa-regular", "fa-star");
+            star[1].classList.add("fa-solid", "fa-star");
+            star[2].classList.remove("fa-regular", "fa-star");
+            star[2].classList.add("fa-solid", "fa-star-half-stroke");
+        } else if (valorNumerico >= 2.8 && valorNumerico < 3.3) {
+            star[0].classList.remove("fa-regular", "fa-star");
+            star[0].classList.add("fa-solid", "fa-star");
+            star[1].classList.remove("fa-regular", "fa-star");
+            star[1].classList.add("fa-solid", "fa-star");
+            star[2].classList.remove("fa-regular", "fa-star");
+            star[2].classList.add("fa-solid", "fa-star");
+        } else if (valorNumerico >= 3.3 && valorNumerico < 3.8) {
+            star[0].classList.remove("fa-regular", "fa-star");
+            star[0].classList.add("fa-solid", "fa-star");
+            star[1].classList.remove("fa-regular", "fa-star");
+            star[1].classList.add("fa-solid", "fa-star");
+            star[2].classList.remove("fa-regular", "fa-star");
+            star[2].classList.add("fa-solid", "fa-star");
+            star[3].classList.remove("fa-regular", "fa-star");
+            star[3].classList.add("fa-solid", "fa-star-half-stroke");
+        } else if (valorNumerico >= 3.8 && valorNumerico < 4.3) {
+            star[0].classList.remove("fa-regular", "fa-star");
+            star[0].classList.add("fa-solid", "fa-star");
+            star[1].classList.remove("fa-regular", "fa-star");
+            star[1].classList.add("fa-solid", "fa-star");
+            star[2].classList.remove("fa-regular", "fa-star");
+            star[2].classList.add("fa-solid", "fa-star");
+            star[3].classList.remove("fa-regular", "fa-star");
+            star[3].classList.add("fa-solid", "fa-star");
+        } else if (valorNumerico >= 4.3 && valorNumerico < 4.8) {
+            star[0].classList.remove("fa-regular", "fa-star");
+            star[0].classList.add("fa-solid", "fa-star");
+            star[1].classList.remove("fa-regular", "fa-star");
+            star[1].classList.add("fa-solid", "fa-star");
+            star[2].classList.remove("fa-regular", "fa-star");
+            star[2].classList.add("fa-solid", "fa-star");
+            star[3].classList.remove("fa-regular", "fa-star");
+            star[3].classList.add("fa-solid", "fa-star");
+            star[4].classList.remove("fa-regular", "fa-star");
+            star[4].classList.add("fa-solid", "fa-star-half-stroke");
+        } else {
+            star.forEach(st => {
+                st.classList.remove("fa-regular", "fa-star");
+                st.classList.add("fa-solid", "fa-star");
+            });
+        }
     }
-    if (valor.value >=0.3 && valor.value<1) {
-        estrella1.classList.remove("fa-star");
-        estrella1.classList.remove("fa-regular");
-        estrella1.classList.add("fa-solid");
-        estrella1.classList.add("fa-star-half-stroke");
-        estrella1.classList.add("fa-star-half-stroke");
-        estrella2.classList.remove("fa-solid");
-        estrella3.classList.remove("fa-solid");
-        estrella4.classList.remove("fa-solid");
-        estrella5.classList.remove("fa-solid");
-    }
-    if (valor.value >=1 && valor.value<1.3) {
-        estrella1.classList.remove("fa-regular");
-        estrella1.classList.add("fa-solid");
-        estrella2.classList.remove("fa-star");
-        estrella2.classList.remove("fa-regular");
-        estrella2.classList.add("fa-solid");
-        estrella2.classList.add("fa-star-half-stroke");
-        estrella2.classList.add("fa-star-half-stroke");
-    }   
-})
+});
+
+

@@ -4,21 +4,133 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body{
+    background: linear-gradient(45deg,rgb(102, 17, 14), rgb(230, 234, 8)); 
+}
+
 .main{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
     flex-direction: column;
+    height: 100vh;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.787);
+    border-radius: 10px;
+    color: white;
+}
+
 
 .datos{
     display: flex;
+    width: 100%;
     flex-direction: column;
+    padding: 10px;
+    justify-content:center ;
+    align-items: center;
 }
 
 .estrellas{
     display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+    color: yellow;
+    transition: all 400ms;
 }
+
+.letrero{
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+input[type="text"] {
+    outline: none;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.367);
+    font-size: 1.2em;
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 400ms;
+}
+
+
+input[type="text"]:focus{
+    background-color: rgb(254, 251, 232);
+    box-shadow: 2px 0px 4px rgb(129, 129, 129), -2px -2px 4px rgb(129, 129, 129);
+    transition: all 400ms;
+   }
+
+input:hover{
+    background-color: rgb(254, 251, 232);
+    transition: all 400ms;
+}
+
+input[type="submit"] {
+    outline: none;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.367);
+    font-size: 1.2em;
+    width: 300px;
+    background-color: rgb(225, 198, 24);
+
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 400ms;
+    font-weight: 900;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(233, 237, 109);
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+.inicio{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
+    top:10px;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(228, 222, 207); 
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    transition: all 400ms;
+}
+
+.inicio:hover{
+    background-color:rgb(176, 170, 156); 
+    transition: all 400ms;
+    color: rgb(255, 234, 0);
+    cursor: pointer;
+}
+
+a{
+    text-decoration: white;
+    color: rgb(168, 53, 53);
+    display: block;
+    padding: 0 1em;
+    transition: all 400ms;
+}
+
+a:hover{
+    color: rgb(168, 53, 53);
+    transition: all 400ms;
+    padding: auto;
+}
+
 

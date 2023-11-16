@@ -8,19 +8,30 @@
     <link rel="stylesheet" href="css/estrella.css">
 </head>
 <body>
+    <div class="inicio"><a href="index.html">Inicio</a></div>
     <div class="main">
-        <div class="datos">
-            <label for="valor">Ingrese un valor númerico:</label>
-            <input type="number" id="valor" name="valor" placeholder="Ingrese un valor entre 1 y 5">
-            <input type="submit"  id="boton"value="Calificar">
+        
+        <div class="container">
+            <div class="datos">
+                <label class="letrero" for="valor">Ingrese un valor númerico:</label>
+                <input type="text" id="valor" name="valor" placeholder="Ingrese un valor entre 0 y 5">
+                <input type="submit"  id="boton"value="Calificar">
+            </div>
+            
+            <div class="estrellas">
+                <i id="estrella1" class="fa-regular fa-star star"></i>
+                <i id="estrella2" class="fa-regular fa-star star"></i>
+                <i id="estrella3" class="fa-regular fa-star star"></i>
+                <i id="estrella4" class="fa-regular fa-star star"></i>
+                <i id="estrella5" class="fa-regular fa-star star"></i>
+            </div>
         </div>
         
-        <div class="estrellas">
-            <div class="estrella-1" ><i id="estrella1" class="fa-regular fa-star"></i></div>
-            <div class="estrella-2" ><i id="estrella2" class="fa-regular fa-star"></i></div>
-            <div class="estrella-3" ><i id="estrella3" class="fa-regular fa-star"></i></div>
-            <div class="estrella-4" ><i id="estrella4" class="fa-regular fa-star"></i></div>
-            <div class="estrella-5" ><i id="estrella5" class="fa-regular fa-star"></i></div>
+    </div>
+</body>
+<script src="js/estrella.js"></script>
+</html>
+
 <!-- 
             <div id="medio" class="medio">
             <i class="fa-solid fa-star-half-stroke"></i>
@@ -31,8 +42,3 @@
             <div id="vacia" class="vacia">
                 <i class="fa-regular fa-star"></i>
             </div> -->
-        </div>
-    </div>
-</body>
-<script src="js/estrella.js"></script>
-</html>
