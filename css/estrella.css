@@ -62,6 +62,7 @@ input[type="text"] {
     border-radius: 10px;
     margin: 10px;
     transition: all 400ms;
+    color: white;
 }
 
 
@@ -69,10 +70,12 @@ input[type="text"]:focus{
     background-color: rgb(254, 251, 232);
     box-shadow: 2px 0px 4px rgb(129, 129, 129), -2px -2px 4px rgb(129, 129, 129);
     transition: all 400ms;
+    color: black;
    }
 
 input:hover{
     background-color: rgb(254, 251, 232);
+    color: black;
     transition: all 400ms;
 }
 
@@ -88,6 +91,7 @@ input[type="submit"] {
     margin: 10px;
     transition: all 400ms;
     font-weight: 900;
+    
 }
 
 input[type="submit"]:hover{
