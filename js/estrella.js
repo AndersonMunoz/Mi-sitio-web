@@ -8,9 +8,9 @@ boton.addEventListener('click', function(){
     if (isNaN(valorNumerico) || valorNumerico < 0 || valorNumerico > 5) {
         alert("Ingrese un valor válido entre 0 y 5");
     } else {
-        star.forEach(st => {
-            st.classList.remove("fa-regular", "fa-star-half-stroke", "fa-solid", "fa-star");
-            st.classList.add("fa-regular", "fa-star");
+        star.forEach(estrellaVacia => {
+            estrellaVacia.classList.remove("fa-regular", "fa-star-half-stroke", "fa-solid", "fa-star");
+            estrellaVacia.classList.add("fa-regular", "fa-star");
         });
         if (valorNumerico >= 0 && valorNumerico <0.3 ){
             for (let i=0;i<=starLargo;i++){
@@ -77,13 +77,13 @@ boton.addEventListener('click', function(){
             star[3].classList.add("fa-solid", "fa-star");
             star[4].classList.remove("fa-regular", "fa-star");
             star[4].classList.add("fa-solid", "fa-star-half-stroke");
-        } else {
-            star.forEach(st => {
-                st.classList.remove("fa-regular", "fa-star");
-                st.classList.add("fa-solid", "fa-star");
-            });
+        } else if ((valorNumerico >= 4.8 && valorNumerico <= 5)) {
+            for (let i=0;i<=starLargo;i++){
+                star[i].classList.remove("fa-regular", "fa-star","fa-star-half-stroke");
+                star[i].classList.add("fa-solid", "fa-star");       
         }
     }
+}
 });
 
 
