@@ -14,8 +14,8 @@ boton.addEventListener('click', function(){
         });
         if (valorNumerico >= 0 && valorNumerico <0.3 ){
             for (let i=0;i<=starLargo;i++){
-                star[i].classList.add("fa-regular", "fa-star");
                 star[i].classList.remove("fa-solid", "fa-star-half-stroke");
+                star[i].classList.add("fa-regular", "fa-star");
             }
         }
         if (valorNumerico >= 0.3 && valorNumerico < 0.8) {
