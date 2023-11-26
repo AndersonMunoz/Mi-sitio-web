@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de progreso</title>
+    <link rel="stylesheet" href="css/progreso.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo_barras">
+            <label for="star5">5 estrellas:</label>
+            <input onkeypress="return soloNumeros(event)" class="numero" type="text" min="0" id="star5" placeholder="Ingrese valor...">
+            <label for="star4">4 estrellas:</label>
+            <input onkeypress="return soloNumeros(event)" class="numero" type="text" min="0" id="star4" placeholder="Ingrese valor...">
+            <label for="star3">3 estrellas:</label>
+            <input onkeypress="return soloNumeros(event)" class="numero" type="text" min="0" id="star3" placeholder="Ingrese valor...">
+            <label for="star2">4 estrellas:</label>
+            <input onkeypress="return soloNumeros(event)" class="numero" type="text" min="0" id="star2" placeholder="Ingrese valor...">
+            <label for="star1">1 estrella:</label>
+            <input onkeypress="return soloNumeros(event)" class="numero" type="text"  min="0" id="star1" placeholder="Ingrese valor...">
+            <input type="submit"  id="boton"value="Calificar">
+            
+            <div class="totales">
+                <p>Los votos totales son:</p>
+                <div id="votos_totales"></div>
+            </div>
+            
+            <div class="barritas">
+                <div class="barras-por"><div class="barra"><div class="main_bar"></div></div><div class="valor_por">0</div>&nbsp;%</div>
+                <div class="barras-por"><div class="barra"><div class="main_bar"></div></div><div class="valor_por">0</div>&nbsp;%</div>
+                <div class="barras-por"><div class="barra"><div class="main_bar"></div></div><div class="valor_por">0</div>&nbsp;%</div>
+                <div class="barras-por"><div class="barra"><div class="main_bar"></div></div><div class="valor_por">0</div>&nbsp;%</div>
+                <div class="barras-por"><div class="barra"><div class="main_bar"></div></div><div class="valor_por">0</div>&nbsp;%</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/progreso.js"></script>
+</body>
+</html>

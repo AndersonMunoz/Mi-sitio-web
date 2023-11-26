@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,rgb(27, 14, 102), rgb(17, 197, 197)); 
+    color: white;
+}
+
+.todo_barras{
+    width: 600px;
+    height: auto;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+label{
+    padding: 5px;
+}
+
+input[type="text"]{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(7, 7, 71);
+    color: white;
+    width: auto;
+    margin: 10px;
+    font-size: 1.2em;
+    transition: all 400ms;  
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(34, 34, 151);
+    color: white;
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+.barra{
+    width: 300px;
+    height: 30px;
+    margin: 10PX;
+    border: none;
+    display: flex;
+    justify-content: left;
+    border-radius: 5px;
+    background-color: white;
+}
+.barritas{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.barras-por{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items:center;
+}
+
+.totales{
+    display: flex;
+    flex-direction: row;
+}
