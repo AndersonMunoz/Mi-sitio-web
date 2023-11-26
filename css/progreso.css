@@ -11,7 +11,10 @@
     align-items: center;
     background: linear-gradient(45deg,rgb(27, 14, 102), rgb(17, 197, 197)); 
     color: white;
+    min-height: 100vh; 
+    height: auto; 
 }
+
 
 .todo_barras{
     width: 600px;
@@ -80,4 +83,48 @@ input[type="submit"]:hover{
 .totales{
     display: flex;
     flex-direction: row;
+}
+
+.las-barras{
+    display: inline-block   ;
+}
+
+.numero {
+    margin: 5px;
+}
+
+.inicio{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
+    top:10px;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(37, 138, 178);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    transition: all 400ms;
+}
+
+.inicio:hover{
+    background-color:rgb(72, 168, 206);
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: white;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px;
+    transition: all 400ms;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+    transition: all 400ms;
+    padding: auto;
 }

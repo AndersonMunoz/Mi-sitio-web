@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="css/progreso.css">
 </head>
 <body>
+    <div class="inicio"><a href="index.html">Inicio</a></div>
     <div class="container">
         <div class="todo_barras">
-            <label for="star5">5 estrellas:</label>
-            <input onkeypress="return soloNumeros(event)" class="numero" type="text" min="0" id="star5" placeholder="Ingrese valor...">
-            <label for="star4">4 estrellas:</label>
-            <input onkeypress="return soloNumeros(event)" class="numero" type="text" min="0" id="star4" placeholder="Ingrese valor...">
-            <label for="star3">3 estrellas:</label>
-            <input onkeypress="return soloNumeros(event)" class="numero" type="text" min="0" id="star3" placeholder="Ingrese valor...">
-            <label for="star2">4 estrellas:</label>
-            <input onkeypress="return soloNumeros(event)" class="numero" type="text" min="0" id="star2" placeholder="Ingrese valor...">
-            <label for="star1">1 estrella:</label>
-            <input onkeypress="return soloNumeros(event)" class="numero" type="text"  min="0" id="star1" placeholder="Ingrese valor...">
-            <input type="submit"  id="boton"value="Calificar">
-            
+            <div class="las-barras">
+                <label for="star5">5 estrellas:</label>
+                <input onkeypress="return soloNumeros(event)" class="numero" type="text" min="0" id="star5" placeholder="Ingrese valor..."><br>
+                <label for="star4">4 estrellas:</label>
+                <input onkeypress="return soloNumeros(event)" class="numero" type="text" min="0" id="star4" placeholder="Ingrese valor..."><br>
+                <label for="star3">3 estrellas:</label>
+                <input onkeypress="return soloNumeros(event)" class="numero" type="text" min="0" id="star3" placeholder="Ingrese valor..."><br>
+                <label for="star2">4 estrellas:</label>
+                <input onkeypress="return soloNumeros(event)" class="numero" type="text" min="0" id="star2" placeholder="Ingrese valor..."><br>
+                <label for="star1">1 estrella:</label>
+                <input onkeypress="return soloNumeros(event)" class="numero" type="text"  min="0" id="star1" placeholder="Ingrese valor..."><br>
+                <input type="submit"  id="boton"value="Calificar">
+            </div>
             <div class="totales">
                 <p>Los votos totales son:</p>
                 <div id="votos_totales"></div>
