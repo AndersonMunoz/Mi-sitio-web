@@ -3,6 +3,7 @@
     margin:0;
     padding: 0;
     font-size: 15px;
+    
 }
 
 body {
@@ -20,12 +21,6 @@ body {
     z-index: -20;
 }
 
-.menu{
-    width: 150px;
-    position: absolute;
-    height: 60px;
-    color: white;
-}
 
 .bar-menu{
     color: white;
@@ -38,7 +33,6 @@ body {
 nav a {
     text-decoration: white;
     color: white;
-    display: block;
     padding: 0;
 }
 
@@ -47,6 +41,9 @@ nav {
     display: inline-block;
     position: static;
     z-index: 1;
+    width:100%;
+    height: 40px;
+    color: white;
 }
 
 nav ul {
@@ -54,11 +51,9 @@ nav ul {
     padding: 0;
     display: table;
     position: absolute;
-    width: 100%;
     text-align: center;
     justify-content: center;
     margin: 1px;
-    
 
 }
 
@@ -71,7 +66,6 @@ nav ul {
 }
 
 .item-main-menu:hover{
-    float: left;
     line-height: 40px;
     background-color: none;
     border-radius: 5px;
@@ -99,8 +93,6 @@ nav>ul>li>ul>li>ul>li{
 
 nav>ul>li>ul>li>ul>li:hover{
     position: relative;
-    left: 150px;
-    top:-40px;
     border-radius: 5px;
     border: 1px solid rgb(251, 255, 0);
     text-shadow: 1px 1px 10px rgb(229, 233, 19);
@@ -152,34 +144,11 @@ nav li:hover > ul >li {
 }
 
 .normal1 {
-    width: 200px;
-}
-.nombre {
-    color: white;
-    position: absolute;
-    margin-top: 140px;
-    margin-left: 7%;
-    grid-area: nombre;
-    width: 1000px;
-    display:flex;
-    align-items: center;
-}
-
-.about2{
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    font-size: 40px;
-    margin-bottom: 10px;
-    font-family:'Teko', sans-serif;
-}
-
-.fa-github {
-    font-size: 40px;
+    width: 100%
 }
 
 .nombrepri{
-    font-size: 90px;
+    font-size: 50px;
     font-family:'Teko', sans-serif;
     transition: text-shadow 500ms;
 }
@@ -214,26 +183,13 @@ nav li:hover > ul >li {
     top: 0;
 }
 
-.info {
-    width: 500px;
-    height: 300px;
-    display: inline-block;
-    position: absolute;
-    color: white;
-    right: 0px;
-    top:250px;
-    text-align: left;
-    grid-area: info;
-}
+
 .about {
     font-size: 40px;
     margin-bottom: 10px;
     font-family:'Teko', sans-serif;
 }
 
-.fa-solid {
-    font-size: 35px;
-}
 
 .about:hover{
     text-shadow: 0px 0px 10px rgb(255, 255, 255);
@@ -268,28 +224,47 @@ nav li:hover > ul >li {
 
 .line {
     grid-area: line;
+    width: 100%;
 }
 .header{
-    display: grid;
+    display: grid;  
     justify-content: left;
     width: 100%;
     grid-template:  "empty-1  line    empty-2" 40px /
                      100px  1fr    100px ;
 }
 
-.bigname{
-    display: grid;
+.nombre {
+    grid-area: nombre;
+    color: white;
     width: 100%;
-    justify-content: left;
-    grid-template: "empty-1 nombre  info    empty-1" 500px /
-                    100px   500px   200px     100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.info {
+    grid-area: info;
+    width: 100%;
+    color: white;
+    text-align: left;
+}
+
+
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nombre-containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .mapa {
-    position: absolute;
     display: flex;
     width: 100%;
-    top: 600px;
     justify-content: center;
     align-items: center;
 
@@ -316,7 +291,6 @@ nav li:hover > ul >li {
 }
 
 .videoprin{
-    position: absolute;
     display: flex;
     width: 100%;
     top: 1300px;
@@ -342,6 +316,177 @@ a{
     padding: 0 1em;
 }
 
+.acercade{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template: "empty-1   information  empty-0" 
+                     "empty-1   skills  empty-0"1000px / 
+                    1fr    1000px   1fr;
+}
+.skills{
+    grid-area: skills;
+    width: 100%;
+    height: 100vh;
+    font-family:'Teko', sans-serif; 
+    display: block;
+    color: white;
+}
+.information{   
+    width: 100%;
+    grid-area: information;
+    display: grid;
+    grid-template: "picture    details" 100vh/
+                    400px       600px  ;
+}
+
+.picture{
+    grid-area: picture;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details{
+    grid-area: details;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mandraw {
+    width: 100%;
+    border-radius: 50px;
+}
+
+
+.description{
+    padding: 30px;
+    font-family:'Teko', sans-serif; 
+    color: rgb(255, 255, 255);
+    background-color: rgba(26, 26, 26, 0.507);
+    width: 100%;
+    border-radius: 50px;
+}
+ 
+.name{
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+}
+
+.title{
+    font-size: 2em;
+    color: rgb(0, 255, 0);
+}
+
+.bio{
+    font-size: 1.5em;
+}
+
+.skills-head{
+    font-size: 4em;
+    text-align: center;
+    transition: all 400ms;
+}
+
+.fa-github{
+    size: none  ;
+}
+.skills-head:hover{
+    text-shadow: 0px 0px  5px rgb(255, 255, 255);
+    transition: all 400ms;
+}
+
+.super-skills{
+    color: white;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template:"html css php js"180px
+                    "node java mysql monogo"180px/
+                    180px   180px   180px   180px;
+}
+
+.description-skills{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.253);
+    margin: 5px;
+    border-radius: 30px;
+    align-items: centers;
+    transition: all 400ms;
+}
+
+.description-skills:hover{
+    cursor: pointer;
+    font-size: 2em;
+    transition: all 400ms;
+    text-shadow: 0px 0px 2px black  ;
+    background-color: rgba(255, 255, 255, 0.144);
+}
+
+.skills-logo,.fa-database {
+    font-size: 6em;
+}
+
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.sub-skills{
+    font-size: 1.8em;
+}
+.html,.css,.php,.js,.node,.java,.mysql,.mongo{
+    transition: all 400ms;
+}
+.html:hover{
+    color: orangered;
+    transition: all 400ms;
+}
+
+.css:hover{
+    color: rgb(37, 75, 221);
+    transition: all 400ms;
+}
+
+.php:hover{
+    color: rgb(115,119,173);
+    transition: all 400ms;
+}
+
+.js:hover{
+    color: rgb(239,219,29);
+    transition: all 400ms;
+}
+
+.node:hover{
+    color: rgb(126,199,39);
+    transition: all 400ms;
+}
+
+.java:hover{
+    color: rgb(229,31,36);
+    transition: all 400ms;
+}
+
+.mysql:hover{
+    color: rgb(221,138,0);
+    transition: all 400ms;
+}
+
+.mongo:hover{
+    color: rgb(15,165,77);
+    transition: all 400ms;
+}
 
 @media only screen and (max-width:1290px) {
     
