@@ -13,12 +13,17 @@
       <source src="video/video.mp4" type="video/mp4">
     </video>
      <body>
+      <div class="social-shorts">
+         <a class="logos-git" target="_blank" href="https://github.com/AndersonMunoz" ><i class="fa-brands fa-github"></i></a>
+         <a class="logos-link" target="_blank" href="https://www.linkedin.com/in/anderson-munoz"><i class="fa-brands fa-linkedin"></i></a>
+         <a class="logos-what" target="_blank" href="https://wa.me/573202952032"><div><i class="fa-brands fa-whatsapp"></i></div></a>
+      </div>
       <div class="header">
         <div class="line"> 
             <nav class="menu">
                <label id="barraMenu" class="bar-menu"><p>&#9776</p></label>
                     <ul id="mainMenu" class="main-menu">
-                        <li id="fuente" class="item-main-menu"><div class="superior"> My learning&nbsp;<i class="fa-brands fa-leanpub"></i></div>
+                        <li id="fuente" class="item-main-menu"><div class="superior"> SENA learning&nbsp;<i class="fa-brands fa-leanpub"></i></div>
                            <ul id="submainMenu">
                               <li id="fuente">Fuentes
                                  <ul>
@@ -125,9 +130,10 @@
                                </li>
                            </ul>
                         </li>
-                        <li  class="item-main-menu"><div class="superior">About me&nbsp;<i class="fa-solid fa-user"></i></div></li>
-                        <li  class="item-main-menu"><div class="superior"><a target="_blank" href="https://github.com/AndersonMunoz">Projects&nbsp;<span class="github"><i class="fa-brands fa-github"></i></span></a></div></li>
-                        <li class="item-main-menu"><div class="superior">Contact&nbsp;<i class="fa-solid fa-id-card"></i></div></li>
+                        <li  class="item-main-menu"><a href="#1"><div class="superior">About me&nbsp;<i class="fa-solid fa-user"></i></div></a></li>
+                        <li class="item-main-menu"><a href="#2"><div class="superior">Skills&nbsp;<i class="fa-solid fa-gears"></i></div></a></li>
+                        <li class="item-main-menu"><a href="#3"><div class="superior">Contact&nbsp;<i class="fa-solid fa-id-card"></i></div></a></li>
+                        <li  class="item-main-menu"><div class="superior"><a target="_blank" href="https://github.com/AndersonMunoz?tab=repositories">Projects&nbsp;<span class="github"><i class="fa-brands fa-github"></i></span></a></div></li>
                         <li id="cvItem" class="item-main-menu">
                            <div class="superior">Resumé <i class="fa-solid fa-file"></i></div>
                            <ul>
@@ -141,17 +147,17 @@
         </div>
       </div>
       <div class="acercade">
-         <div class="information">
+         <div id="1"class="information">
             <div class="picture"><img class="mandraw" src="img/manpro.jpg" alt=""></div>
             <div class="details">
                 <div class="description">
                     <p class="name">Anderson Steven Muñoz Ordoñez</p>
                     <p class="title">Junior developer</p><br>
-                    <p class="bio">Hi everyone! My name is Anderson Steven Muñoz, I'm 27 years old, I'm very passionate about programming, I'm learning programming logic in order to get the chance to work with in this wonderful world. I'm a responsable, honest, self-taught, organize and team pleayer man always willing to learn new knowledgments from others in order to overcome future odds.</p>
+                    <p class="bio">Hi everyone! My name is Anderson Steven Muñoz, I'm 28 years old, I'm very passionate about programming, I'm learning programming logic in order to get the chance to work with in this wonderful world. I'm a responsable, honest, self-taught, organize and team pleayer man always willing to learn new knowledgments from others in order to overcome future odds.</p>
                 </div>
             </div>
         </div>
-        <div class="skills">
+        <div id="2" class="skills">
             <p class="skills-head">Skills</p>
             <div class="super-skills">
                 <div class="description-skills html"><div class="center"><i class="skills-logo fa-brands fa-html5"></i><p class="sub-skills">HTML5</p></div></div>
@@ -164,6 +170,28 @@
                 <div class="description-skills mongo"><div class="center"><i class="skills-logo fa-solid fa-database"></i><p class="sub-skills">MongoDB</p></div></div>
             </div>
         </div>
+         <div id="3" class="contact">
+            <div class="contact-section">
+               <form>
+                  <h1 class="skills-head">Contact</h1>
+                  <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Type your name...">
+                  </div>
+                  <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Type your email...">
+                  </div>
+                  <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Leave a message"></textarea>
+                  </div>
+                  <div>
+                        <button class="send-button" type="submit">Enviar</button>
+                  </div>
+               </form>
+            </div>
+      </div>
       </div>
       <div class="mapa">
          <div class="submap">
@@ -180,8 +208,7 @@
             </div>
          </div>
       </div>
-      <div class="whatsapp"><img class="whatimg" src="img/whatsapp.jpg" alt=""></div>       
-        <script src="js/index.js"></script>
+      <script src="js/index.js"></script>
       </body>
 
 </html>

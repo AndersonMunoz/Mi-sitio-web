@@ -39,7 +39,7 @@ nav a {
 nav {
     justify-content: center;
     display: inline-block;
-    position: static;
+    position: fixed;
     z-index: 1;
     width:100%;
     height: 40px;
@@ -82,6 +82,7 @@ nav>ul>li>ul>li{
     line-height: 40px;
     margin-left: -10px;
     color: rgb(255, 255, 255);
+    
 }
 
 nav>ul>li>ul>li>ul>li{
@@ -117,6 +118,7 @@ nav>ul>li>ul>li:hover {
 nav li {
     position: relative;
     display: inline-block;
+    
 }
 
 
@@ -197,37 +199,15 @@ nav li:hover > ul >li {
     cursor: pointer;
 }
 
-.whatsapp {
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    bottom: 10px;
-    right: 12px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    border-radius: 50px;
-    color: white;
-    text-shadow: 0px 0px 10px rgb(37,211,102);
-}
-
-.whatsapp:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 10px rgb(57, 238, 57);
-    transition: box-shadow 300ms;
-}
-
-.whatimg {
-    width: 48px;
-    height: 48px;
-}
-
 .line {
     grid-area: line;
     width: 100%;
 }
 .header{
     display: grid;  
+    position: fixed;
+    
+    background-color: rgba(15, 15, 15, 0.87);
     justify-content: left;
     width: 100%;
     grid-template:  "empty-1  line    empty-2" 40px /
@@ -322,22 +302,24 @@ a{
     justify-content: center;
     align-items: center;
     grid-template: "empty-1   information  empty-0" 
-                     "empty-1   skills  empty-0"1000px / 
+                     "empty-1   skills  empty-0"
+                     "empty-1   contact  empty-0"550px / 
                     1fr    1000px   1fr;
 }
 .skills{
     grid-area: skills;
     width: 100%;
-    height: 100vh;
+    padding-top: 50px;
     font-family:'Teko', sans-serif; 
     display: block;
     color: white;
 }
 .information{   
+    margin-top: 50px;
     width: 100%;
     grid-area: information;
     display: grid;
-    grid-template: "picture    details" 100vh/
+    grid-template: "picture    details" 500px/
                     400px       600px  ;
 }
 
@@ -389,6 +371,9 @@ a{
     font-size: 4em;
     text-align: center;
     transition: all 400ms;
+    padding: 20px;
+    order: 1;
+    color: #0bffe3;
 }
 
 .fa-github{
@@ -487,7 +472,95 @@ a{
     color: rgb(15,165,77);
     transition: all 400ms;
 }
+.contact {
+    grid-area: contact;
+    width: 100%;
+    height: 500px;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
 
+.contact-section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+form{
+    width: 75%;
+}
+.contact-section form div label {
+    display: block;
+    padding: 10px;
+    font-size: 1em; /* Ajusta el tamaño del texto en las etiquetas de input */
+}
+
+.contact-section form div input,
+.contact-section form div textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.204);
+    color: white;
+    font-size: 1em; /* Ajusta el tamaño del texto en los inputs y textarea */
+}
+
+.contact-section form div textarea{
+    height: 80px;
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-color: rgba(2, 2, 2, 0.31);
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.social-shorts {
+    display: inline-block;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 125px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.social-shorts a {
+    margin: 5px; 
+    transition: all 100ms; 
+}
+
+.social-shorts i {
+    font-size: 2em;
+    transition: all 100ms;
+}
+
+.logos-git:hover {
+    color: rgb(115,119,173);
+    transition: all 100ms;
+}
+.logos-link:hover {
+    color: rgb(11,103,195);
+    transition: all 100ms;
+
+}
+.logos-what:hover{
+    color: rgb(34,196,95);
+    transition: all 100ms;
+
+}
 @media only screen and (max-width:1290px) {
     
     nav {

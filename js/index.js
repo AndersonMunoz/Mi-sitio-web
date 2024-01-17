@@ -27,10 +27,9 @@ fuente.addEventListener("click",function() {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Obtener referencia a los elementos
-    var cvItem = document.getElementById('cvItem');
-    var cvEnglish = document.getElementById('cvEnglish');
-    var cvSpanish = document.getElementById('cvSpanish');
+    let cvItem = document.getElementById('cvItem');
+    let cvEnglish = document.getElementById('cvEnglish');
+    let cvSpanish = document.getElementById('cvSpanish');
 
     // Agregar manejador de clic al elemento principal
     cvItem.addEventListener('click', function (event) {
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Función para abrir una vista previa del PDF en una nueva ventana
     function abrirVistaPreviaPDF(ruta, tituloVentana) {
         // Abrir una nueva ventana
-        var nuevaVentana = window.open('', '_blank', 'width=800,height=600');
+        let nuevaVentana = window.open('', '_blank', 'width=800,height=600');
 
         // Establecer el título de la nueva ventana
         nuevaVentana.document.title = tituloVentana;
