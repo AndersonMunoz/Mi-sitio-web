@@ -373,7 +373,6 @@ a{
     transition: all 400ms;
     padding: 20px;
     order: 1;
-    color: #0bffe3;
 }
 
 .fa-github{
@@ -558,7 +557,7 @@ form{
 }
 .logos-what:hover{
     color: rgb(34,196,95);
-    transition: all 100ms;
+    transition: all 400ms;
 
 }
 @media only screen and (max-width:1290px) {
