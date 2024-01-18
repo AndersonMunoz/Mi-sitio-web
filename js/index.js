@@ -79,5 +79,5 @@ function handleSubmit(event){
     mailTo.click();
 }
 
-var year = new Date().getFullYear();
+let year = new Date().getFullYear();
 document.getElementById("current_date").innerHTML = year;

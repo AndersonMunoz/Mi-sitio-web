@@ -10,6 +10,9 @@ body {
     height: 100%;
     overflow-y: auto;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 #video-fondo {
     position: fixed;
@@ -41,7 +44,7 @@ nav {
     display: inline-block;
     position: fixed;
     z-index: 1;
-    width:100%;
+    width:80%;
     height: 40px;
     color: white;
 }
@@ -298,10 +301,12 @@ a{
 
 .acercade{
     display: grid;
+    
+    scroll-behavior: smooth; 
     width: 100%;
     justify-content: center;
     align-items: center;
-    grid-template: "empty-1   information  empty-0" 500px
+    grid-template: "empty-1   information  empty-0" 540px
                      "empty-1   skills  empty-0" 500px
                      "empty-1   contact  empty-0" 500px/
                     1fr    1000px   1fr;
@@ -315,7 +320,7 @@ a{
     color: white;
 }
 .information{   
-    margin-top: 50px;
+    margin-top: 80px;
     width: 100%;
     grid-area: information;
     display: grid;
@@ -619,11 +624,16 @@ form{
 
   ::-webkit-scrollbar-track{
     border-radius: 5px;
+    
   }
 
   ::-webkit-scrollbar-thumb{
     border-radius: 5px;
     background-color: #686969;
+  }
+
+  ::-webkit-scrollbar-corner{
+    background-color: #000000;
   }
 @media only screen and (max-width:1290px) {
     
