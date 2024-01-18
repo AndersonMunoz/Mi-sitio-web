@@ -65,3 +65,19 @@ document.addEventListener('DOMContentLoaded', function () {
         nuevaVentana.document.body.appendChild(elementoEmbed);
     }
 });
+
+let form = document.getElementById("form");
+let mailTo = document.getElementById("mailTo")
+
+form.addEventListener("submit",handleSubmit)
+
+function handleSubmit(event){
+    event.preventDefault();
+    const formObje= new FormData(this)
+    console.log(formObje.get('name'))
+    mailTo.setAttribute('href',`mailto:anderson180@hotmail.es?subject=${formObje.get('name')}'s job offer from your portfolio &body=${formObje.get('message')}`)
+    mailTo.click();
+}
+
+var year = new Date().getFullYear();
+document.getElementById("current_date").innerHTML = year;
