@@ -94,10 +94,12 @@ nav>ul>li>ul>li>ul>li{
     top:-40px;
 }
 
-
-nav>ul>li>ul>li>ul>li:hover{
+.learn-sub-sect{
+    padding: 8px;
+}
+.learn-sub-sect:hover{
     position: relative;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid rgb(251, 255, 0);
     text-shadow: 1px 1px 10px rgb(229, 233, 19);
     box-shadow: 0px 0px 10px rgba(146, 133, 14, 0.5);
@@ -209,7 +211,7 @@ nav li:hover > ul >li {
 .header{
     display: grid;  
     position: fixed;
-    
+    z-index: 100;
     background-color: rgba(15, 15, 15, 0.87);
     justify-content: left;
     width: 100%;
@@ -301,13 +303,14 @@ a{
 
 .acercade{
     display: grid;
-    
+    padding: 10px;
     scroll-behavior: smooth; 
     width: 100%;
     justify-content: center;
     align-items: center;
     grid-template: "empty-1   information  empty-0" 540px
                      "empty-1   skills  empty-0" 500px
+                     "empty-1   sena  empty-0"  700px
                      "empty-1   contact  empty-0" 500px/
                     1fr    1000px   1fr;
 }
@@ -378,9 +381,8 @@ a{
     transition: all 400ms;
     padding: 20px;
     order: 1;
-    color: #18cfd2;
+    color: #36d728;
 }
-
 .fa-github{
     size: none  ;
 }
@@ -406,7 +408,7 @@ a{
     background-color: rgba(255, 255, 255, 0.253);
     margin: 5px;
     border-radius: 30px;
-    align-items: centers;
+    align-items: center;
     transition: all 400ms;
 }
 
@@ -635,6 +637,99 @@ form{
   ::-webkit-scrollbar-corner{
     background-color: #000000;
   }
+
+  .sena{
+    padding-top: 50px;
+    grid-area: sena;
+    width: 100%;
+    height: 100%;
+  }
+
+  .box-learn{
+    width: 100%;
+    display: grid;
+    justify-content: top;
+    align-items: top    ;
+    grid-template:  "sena-lit1 empty-5 sena-lit2 empty-2 sena-lit3 empty-1 sena-lit10  empty-3 sena-lit4" 264px 
+                    "sena-lit6 empty-5 sena-lit7 empty-2 sena-lit8 empty-1 sena-lit9 empty-3 empty-8" auto
+                    "sena-lit11 empty-5 sena-lit12 empty-2 sena-lit5 empty-4 empty-4 empty-4 empty-4" auto/
+                    18%  2%   18%  2%  18%  2%   18%  2%  18%;
+  }
+
+.box-learn-description{
+    width: 100%;    
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    transition: all 400ms;    
+    border-radius: 10px;
+    background-color: #0000007f;
+        margin-top: 10%;
+        border: 1px solid black;
+}
+.learn-sub{
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #19fbff;
+    transition: all 400ms;
+}
+.learn-sub:hover {
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    transition: all 400ms;
+}
+
+.box-learn-description:hover{
+    background-color: rgb(184, 175, 224, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgb(57, 238, 238);
+    text-shadow: 1px 1px 10px rgb(57, 238, 238);
+    box-shadow: 0px 0px 10px rgb(57, 238, 238,0.5);
+    transition: box-shadow 300ms;
+    cursor: pointer;
+    background-color: rgba(39, 39, 39, 0.87);
+    transition: all 400ms;
+}
+.sena-lit1{
+    grid-area: sena-lit1;
+}
+.sena-lit2{
+    grid-area: sena-lit2;
+}
+.sena-lit3{
+    grid-area: sena-lit3;
+}
+.sena-lit4{
+    grid-area: sena-lit4;
+    height: 429px;
+}
+
+.sena-lit5{
+    grid-area: sena-lit5;
+}
+.sena-lit6{
+    grid-area: sena-lit6;
+}
+.sena-lit7{
+    grid-area: sena-lit7;
+}
+.sena-lit8{
+    grid-area: sena-lit8;
+}
+.sena-lit9{
+    grid-area: sena-lit9;
+}
+.sena-lit10{
+    grid-area: sena-lit10;
+}
+.sena-lit11{
+    grid-area: sena-lit11;
+    height: auto;
+}
+.sena-lit12{
+    grid-area: sena-lit12;
+}
+
 @media only screen and (max-width:1290px) {
     
     /* nav {
